@@ -1,7 +1,7 @@
 Protocol for analysis of comorbidity using SAIL data
 ================
 David A McAllister
-2018-12-05
+2018-12-21
 
 Personnel
 =========
@@ -225,6 +225,7 @@ Table 6 List of index conditions
 | Psoriasis                                 |                    31|
 | Psoriatic arthropathy                     |                     7|
 | Pulmonary Disease, Chronic Obstructive    |                    45|
+| Pulmonary fibrosis                        |                    12|
 | Restless legs syndrome                    |                     1|
 | Rheumatoid arthritis                      |                    51|
 | Systemic Lupus Erythematosus              |                    12|
@@ -242,7 +243,7 @@ Table 7 Multiple diagnostic criteria, primary and secondary analyses
 
 We have generally avoided using drugs as part of the definition of index conditions to avoid the risk of biasing the findings towards patients who are more likely to be prescribed drugs, by making having received a drug part of the inclusion criterion. However, in the case of migraine, the definition includes one or more of the listed Read codes for migraine **as well** as a prescription for a migraine drug (WHO ATC code N02C, as per the concomitant medication analysis). Similarly, we required the thromboembolism definition to include a prescription of an anticoagulant drug (B01AA, B01AE or B01AF as per the concomitant medication analysis.)
 
-Two of the index diagnoses relate to events rather than chronic illnesses; myocardial infarction and arthroplasty (knee and hip). These episodes will be defined using hospital episode data (coded via ICD10 and OPCS respectively.) The codes for myocardial infarction are ICD-10 codes I21 and I22. The codes for hip and knee arthroplasty are those described by The National Joint Registry (NJR) as being suitable for translating NJR procedures into OPCS codes (<http://www.njrcentre.org.uk/njrcentre/Portals/0/Documents/England/Data%20collection%20forms/OPCS%20Procedure%20codes%20relevant%20to%20NJRv4.pdf>) (Table A2). In both cases we will define the patient as having the index condition if any of the relevant codes were included in any position from 2012-01-01 to 2012-04-01 for patients defined as being in the denominator population.
+Two of the index diagnoses relate to events rather than chronic illnesses; myocardial infarction and arthroplasty (knee and hip). These episodes will be defined using hospital episode data (coded via ICD10 and OPCS respectively.) The codes for myocardial infarction are ICD-10 codes I21 and I22. The codes for hip and knee arthroplasty are those described by The National Joint Registry (NJR) as being suitable for translating NJR procedures into OPCS codes (<http://www.njrcentre.org.uk/njrcentre/Portals/0/Documents/England/Data%20collection%20forms/OPCS%20Procedure%20codes%20relevant%20to%20NJRv4.pdf>) (Table A2). In both cases we will define the patient as having the index condition if any of the relevant codes were included in any position from 2012-01-01 to 2012-12-01 for patients defined as being in the denominator population. We had previously selected a 3-month period but opted to extend this to include more patients. This decision was taken before calculating comorbidity counts for myocardial infarction adn/or hip arthroplasty.
 
 Age and sex standardisation
 ===========================
@@ -1240,56 +1241,53 @@ Table A1 Read codes for index diagnoses
 | N05zE     | Osteoarthritis NOS, of wrist                                                                                          | Osteoarthritis                            |
 | XE1De     | Osteoarthritis NOS, pelvic region/thigh                                                                               | Osteoarthritis                            |
 | N05z3     | Osteoarthritis NOS: \[of the forearm\] or \[wrist\]                                                                   | Osteoarthritis                            |
+| H563.00   | idiopathic fibrosing alveolitis                                                                                       | Pulmonary fibrosis                        |
+| H563.11   | Hamman?ich syndrome                                                                                                   | Pulmonary fibrosis                        |
+| H563.12   | cryptogenic fibrosing alveolitis                                                                                      | Pulmonary fibrosis                        |
+| H563.13   | Idiopathic pulmonary fibrosis                                                                                         | Pulmonary fibrosis                        |
+| H563100   | diffuse pulmonary fibrosis                                                                                            | Pulmonary fibrosis                        |
+| H563200   | Pulmonary fibrosis                                                                                                    | Pulmonary fibrosis                        |
+| H563z     | Idiopathic fibrosing alveolitis                                                                                       | Pulmonary fibrosis                        |
+| H563z00   | idiopathic fibrosing alveolitis NOS                                                                                   | Pulmonary fibrosis                        |
+| X102v     | Usual interstitial pneumonitis                                                                                        | Pulmonary fibrosis                        |
+| X102w     | Desquamative interstitial pneum                                                                                       | Pulmonary fibrosis                        |
+| XE0Yb     | Cryptogenic fibrosing alveoliti                                                                                       | Pulmonary fibrosis                        |
+| XE0Zr     | Idiopath. fibrosing alveolitis                                                                                        | Pulmonary fibrosis                        |
 
 Table A2 OPCS codes for Hip and knee arthroplasty
 -------------------------------------------------
 
-| Type | definition\_or\_label                 | Item  | Code                                                    | Description of procedure (W) codes                                                             |
-|:-----|:--------------------------------------|:------|:--------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| Knee | Defining codes                        | K1.1  | O181                                                    | Primary hybrid prosthetic replacement knee joint using cement                                  |
-| Knee | Defining codes                        | K1.2  | O188                                                    | Hybrid prosthetic replacement knee joint using cement, Other Specified                         |
-| Knee | Defining codes                        | K1.3  | O189                                                    | Hybrid prosthetic replacement knee joint using cement, unspecified                             |
-| Knee | Defining codes                        | K1.4  | W401                                                    | Primary total prosthetic replacement of knee joint using cement                                |
-| Knee | Defining codes                        | K1.5  | W408                                                    | Total prosthetic replacement of knee joint using cement, Other specified                       |
-| Knee | Defining codes                        | K1.6  | W409                                                    | Total prosthetic replacement of knee joint using cement, unspecified                           |
-| Knee | Defining codes                        | K1.7  | W411                                                    | Primary total prosthetic replacement of knee joint not using cement                            |
-| Knee | Defining codes                        | K1.8  | W418                                                    | Total prosthetic replacement of knee joint not using cement, Other specified                   |
-| Knee | Defining codes                        | K1.9  | W419                                                    | Total prosthetic replacement of knee joint not using cement, Unspecified                       |
-| Knee | Defining codes                        | K1.10 | W421                                                    | Primary total prosthetic replacement of knee joint NEC                                         |
-| Knee | Defining codes                        | K1.11 | W428                                                    | Other total prosthetic replacement of knee joint, Other specified                              |
-| Knee | Defining codes                        | K1.12 | W429                                                    | Other total prosthetic replacement of knee joint, Unspecified                                  |
-| Knee | Defining codes                        | K1.13 | W521 And (Z846 Or Z765 Or Z845 or Z844 Or Z774 Or Z787) | Primary prosthetic replacement of articulation of bone using cement NEC                        |
-| Knee | Defining codes                        | K1.14 | W531 And (Z846 Or Z765 Or Z845 or Z844 Or Z774 Or Z787) | Primary prosthetic replacement of articulation of bone not using cement NEC                    |
-| Knee | Defining codes                        | K1.15 | W541 And (Z846 Or Z765 Or Z845 or Z844 Or Z774 Or Z787) | Primary prosthetic replacement of articulation of bone NEC                                     |
-| Knee | Defining codes                        | K1.16 | W581 And (Z846 Or Z765 Or Z845 or Z844 Or Z774 Or Z787) | Primary resurfacing arthroplasty of joint                                                      |
-| Knee | Definitions for anatomical OPCS codes | K1.17 | Z846                                                    | Knee joint                                                                                     |
-| Knee | Definitions for anatomical OPCS codes | K1.18 | Z765                                                    | Lower end of femur NEC Includes: Articular surface of femur at knee                            |
-| Knee | Definitions for anatomical OPCS codes | K1.19 | Z845                                                    | Tibiofemoral joint                                                                             |
-| Knee | Definitions for anatomical OPCS codes | K1.20 | Z844                                                    | Patellofemoral joint                                                                           |
-| Knee | Definitions for anatomical OPCS codes | K1.21 | Z774                                                    | Upper end of tibia NEC Includes: Articular surface of tibia at knee                            |
-| Knee | Definitions for anatomical OPCS codes | K1.22 | Z787                                                    | Patella                                                                                        |
-| Hip  | Defining codes                        | H1.1  | W371                                                    | Primary total prosthetic replacement of hip joint using cement                                 |
-| Hip  | Defining codes                        | H1.2  | W378                                                    | Total prosthetic replacement of hip joint using cement, Other specified                        |
-| Hip  | Defining codes                        | H1.3  | W379                                                    | Total prosthetic replacement of hip joint using cement, Unspecified                            |
-| Hip  | Defining codes                        | H1.4  | W381                                                    | Primary total prosthetic replacement of hip joint not using cement                             |
-| Hip  | Defining codes                        | H1.5  | W388                                                    | Total prosthetic replacement of hip joint not using cement, Other specified                    |
-| Hip  | Defining codes                        | H1.6  | W389                                                    | Total prosthetic replacement of hip joint not using cement, Unspecified                        |
-| Hip  | Defining codes                        | H1.7  | W391                                                    | Primary total prosthetic replacement of hip joint NEC                                          |
-| Hip  | Defining codes                        | H1.8  | W398                                                    | Other specified hybrid prosthetic replacement of hip joint using cemented acetabular component |
-| Hip  | Defining codes                        | H1.9  | W399                                                    | Unspecified hybrid prosthetic replacement of hip joint using cemented acetabular component     |
-| Hip  | Defining codes                        | H1.10 | W521 And (Z843 Or Z761 Or Z756)                         | Primary prosthetic replacement of articulation of bone using cement NEC                        |
-| Hip  | Defining codes                        | H1.11 | W521 And (Z843 Or Z761 Or Z756)                         | Primary prosthetic replacement of articulation of bone not using cement NEC                    |
-| Hip  | Defining codes                        | H1.12 | W521 And (Z843 Or Z761 Or Z756)                         | Primary prosthetic replacement of articulation of bone NEC                                     |
-| Hip  | Defining codes                        | H1.13 | W521 And (Z843 Or Z761 Or Z756)                         | Primary resurfacing arthroplasty of joint                                                      |
-| Hip  | Defining codes                        | H1.14 | W931                                                    | Primary hybrid prosthetic replacement of hip joint using cemented acetabular component         |
-| Hip  | Defining codes                        | H1.15 | W938                                                    | Other specified hybrid prosthetic replacement of hip joint using cemented acetabular component |
-| Hip  | Defining codes                        | H1.16 | W939                                                    | Unspecified hybrid prosthetic replacement of hip joint using cemented acetabular component     |
-| Hip  | Defining codes                        | H1.17 | W941                                                    | Primary hybrid prosthetic replacement of hip joint using cemented femoral component            |
-| Hip  | Defining codes                        | H1.18 | W948                                                    | Other specified hybrid prosthetic replacement of hip joint using cemented femoral component    |
-| Hip  | Defining codes                        | H1.19 | W949                                                    | Unspecified hybrid prosthetic replacement of hip joint using cemented femoral component        |
-| Hip  | Defining codes                        | H1.20 | W951                                                    | Primary hybrid prosthetic replacement of hip joint using cement NEC                            |
-| Hip  | Defining codes                        | H1.21 | W958                                                    | Other specified hybrid prosthetic replacement of hip joint using cement                        |
-| Hip  | Defining codes                        | H1.22 | W959                                                    | Unspecified hybrid prosthetic replacement of hip joint using cement                            |
-| Hip  | Definitions for anatomical OPCS codes | H1.23 | Z843                                                    | Hip joint                                                                                      |
-| Hip  | Definitions for anatomical OPCS codes | H1.24 | Z761                                                    | Head of femur                                                                                  |
-| Hip  | Definitions for anatomical OPCS codes | H1.25 | Z756                                                    | Acetabulum                                                                                     |
+| Type | definition\_or\_label | Item  | Code | Description of procedure (W) codes                                                             |
+|:-----|:----------------------|:------|:-----|:-----------------------------------------------------------------------------------------------|
+| Knee | Defining codes        | K1.1  | O181 | Primary hybrid prosthetic replacement knee joint using cement                                  |
+| Knee | Defining codes        | K1.2  | O188 | Hybrid prosthetic replacement knee joint using cement, Other Specified                         |
+| Knee | Defining codes        | K1.3  | O189 | Hybrid prosthetic replacement knee joint using cement, unspecified                             |
+| Knee | Defining codes        | K1.4  | W401 | Primary total prosthetic replacement of knee joint using cement                                |
+| Knee | Defining codes        | K1.5  | W408 | Total prosthetic replacement of knee joint using cement, Other specified                       |
+| Knee | Defining codes        | K1.6  | W409 | Total prosthetic replacement of knee joint using cement, unspecified                           |
+| Knee | Defining codes        | K1.7  | W411 | Primary total prosthetic replacement of knee joint not using cement                            |
+| Knee | Defining codes        | K1.8  | W418 | Total prosthetic replacement of knee joint not using cement, Other specified                   |
+| Knee | Defining codes        | K1.9  | W419 | Total prosthetic replacement of knee joint not using cement, Unspecified                       |
+| Knee | Defining codes        | K1.10 | W421 | Primary total prosthetic replacement of knee joint NEC                                         |
+| Knee | Defining codes        | K1.11 | W428 | Other total prosthetic replacement of knee joint, Other specified                              |
+| Knee | Defining codes        | K1.12 | W429 | Other total prosthetic replacement of knee joint, Unspecified                                  |
+| Hip  | Defining codes        | H1.1  | W371 | Primary total prosthetic replacement of hip joint using cement                                 |
+| Hip  | Defining codes        | H1.2  | W378 | Total prosthetic replacement of hip joint using cement, Other specified                        |
+| Hip  | Defining codes        | H1.3  | W379 | Total prosthetic replacement of hip joint using cement, Unspecified                            |
+| Hip  | Defining codes        | H1.4  | W381 | Primary total prosthetic replacement of hip joint not using cement                             |
+| Hip  | Defining codes        | H1.5  | W388 | Total prosthetic replacement of hip joint not using cement, Other specified                    |
+| Hip  | Defining codes        | H1.6  | W389 | Total prosthetic replacement of hip joint not using cement, Unspecified                        |
+| Hip  | Defining codes        | H1.7  | W391 | Primary total prosthetic replacement of hip joint NEC                                          |
+| Hip  | Defining codes        | H1.8  | W398 | Other specified hybrid prosthetic replacement of hip joint using cemented acetabular component |
+| Hip  | Defining codes        | H1.9  | W399 | Unspecified hybrid prosthetic replacement of hip joint using cemented acetabular component     |
+| Hip  | Defining codes        | H1.14 | W931 | Primary hybrid prosthetic replacement of hip joint using cemented acetabular component         |
+| Hip  | Defining codes        | H1.15 | W938 | Other specified hybrid prosthetic replacement of hip joint using cemented acetabular component |
+| Hip  | Defining codes        | H1.16 | W939 | Unspecified hybrid prosthetic replacement of hip joint using cemented acetabular component     |
+| Hip  | Defining codes        | H1.17 | W941 | Primary hybrid prosthetic replacement of hip joint using cemented femoral component            |
+| Hip  | Defining codes        | H1.18 | W948 | Other specified hybrid prosthetic replacement of hip joint using cemented femoral component    |
+| Hip  | Defining codes        | H1.19 | W949 | Unspecified hybrid prosthetic replacement of hip joint using cemented femoral component        |
+| Hip  | Defining codes        | H1.20 | W951 | Primary hybrid prosthetic replacement of hip joint using cement NEC                            |
+| Hip  | Defining codes        | H1.21 | W958 | Other specified hybrid prosthetic replacement of hip joint using cement                        |
+| Hip  | Defining codes        | H1.22 | W959 | Unspecified hybrid prosthetic replacement of hip joint using cement                            |
+
+We discovered that those compound codes (which required both anatomical and procedure codes for a definition) that we had previously planned to use to identify arthroplasty were not present in the BioBank dataset. Before examining whether or not they were present in SAIL, we excluded these codes from the definitions for hip and knee arthroplasty.

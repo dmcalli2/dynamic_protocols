@@ -1,7 +1,7 @@
 Protocol for analysis of comorbidity using SAIL data
 ================
 David A McAllister
-2019-01-07
+2019-01-15
 
 Personnel
 =========
@@ -255,11 +255,40 @@ The trial-specific strata will be obtained from summary statistics for the sex-s
 Modelling uncertainty in count distributions
 --------------------------------------------
 
-As the numbers were expected to be large, we had not originally planned to estimate confidence intervals. However, we subsequently decided to do so as some conditions (such as pulmonary hypertension), were found to be uncommon in the primary care data. We therefore developed the following plan to estimate the uncertainty in the differences between primary care and trial comorbidity counts. This analysis was specified prior to examining (including examining graphically) the difference between primary care and trial comorbidity counts. The only change to this analysis plan made *after* comparing the trial and primary care data counts, was in the approach used to summarise the proportion of participants with each count across trials. We had originally planned to use a simple summation weighting by the trial size or within-trial variance, but opted instead to model the uncertainty in a multinomial logit model as will now be described.
+As the numbers were expected to be large, we had not originally planned to estimate confidence intervals. However, we subsequently decided to do so as some conditions (such as pulmonary hypertension), were found to be uncommon in the primary care data. We therefore developed the following plan to estimate the uncertainty in the differences between primary care and trial comorbidity counts. This analysis was specified prior to examining (including examining graphically) the difference between primary care and trial comorbidity counts. The changes to this analysis plan made *after* comparing the trial and primary care data counts, were in the approach used to summarise the proportion of participants with each count across trials. We had originally planned to use a simple summation weighting by the trial size or within-trial variance, but opted instead to model the uncertainty in a multinomial logit model. Howver, there wer difficulties with fitting this model and we therefore opted to use a model with a Poisson likelihood and a log-link.
 
 -   We will model the uncertainty in the primary care data using a Bayesian approach, with a multinomial likelihood, sampling from a Dirichlet distribution as this is a conjugate prior, with a value of 1/K for each parameter in the prior distribution (where K is the number of categories). We will obtain 1,000 samples from the distribution for each age-sex stratum, performing the standardisation with each sample as described above. For this analysis we collapsed patients with 12 or more comorbidities into a single group, giving 13 discrete categories for comorbidity count.
 
 -   For estimating the uncertainty for the distribution of comorbidity counts for each trial, we will use the same approach as for the primary care data. Where there is more than one index condition for a single trial we will estimate the mean proportion of participants with each comorbidity count using a multimonial likelihood and logit link in a hierarchical (random effects model). Each of the 13 categories (counts 0 to 12) will have a vague independent normal prior, with a mean of 0 and precision of 0.001. For the between trial variance we used a slightly more informative prior, reflecting our prior belief that very extreme differences in the proportion of participants with the same comorbidity count (for a count of 3, say, 0.1% versus 99% for two trials) are implausible. We used a half normal prior with a mean of 0, and precision of 0.10. This latter prior approximately corresponds to there being a 50% probability that the between-trial standard-deviation in log-odds is &gt;2. With a a standard deviation of 2 there weould be a log-odds ratio of 13.5 between trials with a proportions on the 10th and 90th centiles. These priors were developed and tested on simulated data. The multinomial logit model will be run in the JAGS statistical package, and the Dirichlet sampling will be performed in R using the MCMCpack package.
+
+Update. There was a considerable amount of autocorrelation for the multinomial logistic regression models, even with thinning, and it was not clear that they had converged even after a large number of samples. They were also slow to run. Moreover, on plotting the trial comorbidity counts, we noted that they were very closely approximated by Poisson distributions (these plots will be included as an appendix in the final results along with the aggregated data and models). Therefore, we fitted a model with a Poisson distribution and a log-link. The JAGS code for this model is shown below.
+
+    model{
+      for(i in 1:i_max){
+        ## Trial level
+        for(j in 1:j_max){
+          ys[i,j] ~ dpois(lambda[i,j])
+          log(lambda[i,j]) <- intercept[i,j] + log(ns[i,j])
+          intercept[i,j] ~ dnorm(mu_trial[i], prec_trial)
+      } # end trial
+      } # end condition
+        ## Prior for intercept at level of condition,  independent for each condition
+        for (i in 1:i_max){
+          mu_trial[i] ~ dnorm(0, 0.1)
+        }
+        ## High-level priors
+        ## Single common prior for between trial variation 
+        prec_trial <- 1/sd_trial^2
+        sd_trial ~ dnorm(0, 1)T(0,)
+    } # End of model
+
+i indicates each condition and j each trial. We incldued a parameter for the expectation for each trial (intercept\[i,j\]), summarised via a higher-level parameter for each condition (mu\_trial\[i\]). This meant the model is similar to a "random effects" meta-analysis. The condition-level expectation was estimated separately for each condition. However, as some conditions had few trials (sometimes only two trials), and it is known to be difficult to estimate between-trial variances in meta-analyses, we opted to model a single between-trial variance, within each condition, for all conditions. On subsequently inspecting the variances for those conditions with multiple trials, this assumption seemed reasonable. For each of 1,000 samples from the posterior, we exponentiated the condition-level expectation (mu\_trial) to obtain the rate parameter for a Poisson probability density function (`dpois in R`) which we used to estimate the proportion of participants with comorbidity count from 0 to 12.
+
+By modelling the expectation, rather than each proportion, we were able to greatly simiplify the modelling. It meant that we could summarise the distribution of counts for each trial using a single integer (the total comorbidity count) along with an offset for the number of participants, and the models appeared to converge quickly with no evidence of autocorrelation.
+
+We compared the estimates from this Poisson model to the original multinomial logistic regression model (which showed considerable autocorrelation). Both models yielded similar point estimates, but the credible intervals for the Poisson model were wider, and hence we opted to use this for all subsequent analyses.
+
+For conditions with only a single trial, we used a Dirichlet prior, for consistency with the primary care data analysis. However, we will note that the estimated uncertainty relates to that single trial, not the the population of trials of which the observed trials are an example (as per the conditions with more than one trial).
 
 We will compare the comorbidity counts between primary care and trials for each index condition as follows:-
 

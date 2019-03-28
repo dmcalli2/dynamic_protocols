@@ -1,55 +1,139 @@
 Protocol for analysis of comorbidity using SAIL data
 ================
 David A McAllister
-2019-01-15
+2019-03-27
 
-Personnel
-=========
+# Personnel
 
-The lead for this project is David McAllister (Wellcome Trust Intermediate Clinical Fellow and Beit Fellow, Senior Clinical Lecturer in Epidemiology in the University of Glasgow and Consultant in Public Health Medicine, NHS Information Services Division, National Services Scotland). He, or a postdoctoral researcher he employs at the University of Glasgow, will conduct the analysis.
+The lead for this project is David McAllister (Wellcome Trust
+Intermediate Clinical Fellow and Beit Fellow, Senior Clinical Lecturer
+in Epidemiology in the University of Glasgow and Consultant in Public
+Health Medicine, NHS Information Services Division, National Services
+Scotland). He, or a postdoctoral researcher he employs at the University
+of Glasgow, will conduct the analysis.
 
-Methodological support will be provided by Sofia Dias (Professor of Health Technology, University of York). She will not work directly with the data, and so will not need access to the SAIL safe haven.
+Methodological support will be provided by Sofia Dias (Professor of
+Health Technology, University of York). She will not work directly with
+the data, and so will not need access to the SAIL safe haven.
 
-Dr Peter Hanlon, an academic primary care doctor will also conduct data analysis.
+Dr Peter Hanlon, an academic primary care doctor will also conduct data
+analysis.
 
-Defining comorbidity
-====================
+# Defining comorbidity
 
-The following text on defining comorbidity is taken from the for protocol defining comorbidity in trial data. We have not, generally, changed the wording to reflect the fact that these definitions will be used in a different setting (eg changing the terminology from participants to patients) in order to make this section as close as possible to a simple “mirror” of the same section in the protocol for analysing trial data.
+The following text on defining comorbidity is taken from the for
+protocol defining comorbidity in trial data. We have not, generally,
+changed the wording to reflect the fact that these definitions will be
+used in a different setting (eg changing the terminology from
+participants to patients) in order to make this section as close as
+possible to a simple “mirror” of the same section in the protocol for
+analysing trial data.
 
-Concomitant medications based definitions
------------------------------------------
+## Concomitant medications based definitions
 
 We will use concomitant medications to identify comorbid conditions.
 
-Previous studies have also used the WHO ATC criteria to define comorbid diseases, but usually in routine healthcare data with the goal being descriptive epidemiology, as in a recent paper by Huber et al.(1) We are not aware of any previous study which has used this approach for individual-level participant data from clinical trials, or to examine heterogeneity of treatment effects. To reduce non-differential misclassification bias, we have chosen definitions which we think favour specificity over sensitivity. (Table 1).
+Previous studies have also used the WHO ATC criteria to define comorbid
+diseases, but usually in routine healthcare data with the goal being
+descriptive epidemiology, as in a recent paper by Huber et al.(1) We are
+not aware of any previous study which has used this approach for
+individual-level participant data from clinical trials, or to examine
+heterogeneity of treatment effects. To reduce non-differential
+misclassification bias, we have chosen definitions which we think favour
+specificity over sensitivity. (Table 1).
 
-For each of the drug-based definitions in Table 1, reported concomitant medications are eligible if they were started at any time on or before starting the trial drug (or comparator) regardless of when they were stopped. Topical drugs are not included in the definitions except for M02 or S01E. Nor drugs with an inhaled or nebulised route of administration, except for R03 drugs.
+For each of the drug-based definitions in Table 1, reported concomitant
+medications are eligible if they were started at any time on or before
+starting the trial drug (or comparator) regardless of when they were
+stopped. Topical drugs are not included in the definitions except for
+M02 or S01E. Nor drugs with an inhaled or nebulised route of
+administration, except for R03 drugs.
 
-This approach to defining comorbidities is a compromise between sensitivity and specificity and some misclassification is inevitable, reflecting the difficulty of inferring diagnoses from drug-usage. We have attempted to minimise the misclassification based on our understanding of clinical practice.
+This approach to defining comorbidities is a compromise between
+sensitivity and specificity and some misclassification is inevitable,
+reflecting the difficulty of inferring diagnoses from drug-usage. We
+have attempted to minimise the misclassification based on our
+understanding of clinical practice.
 
-For example, rather than assuming all participants taking a drug in the A02B class have an acid-related disorder (Table 1) we have limited this definition to exclude participants also taking non-steroidal drugs or any drug with anti-thrombotic actions (aspirin, antiplatelets, warfarin etc). Similarly, we have not used aspirin to define cardiovascular disease because it is in widespread use for primary prevention.(2)
+For example, rather than assuming all participants taking a drug in the
+A02B class have an acid-related disorder (Table 1) we have limited this
+definition to exclude participants also taking non-steroidal drugs or
+any drug with anti-thrombotic actions (aspirin, antiplatelets, warfarin
+etc). Similarly, we have not used aspirin to define cardiovascular
+disease because it is in widespread use for primary prevention.(2)
 
-Moreover, while the ATC system is organised around therapeutic indications, not all indications are coded. This is because “A medicinal substance can be given more than one ATC code **ONLY** if it is available in two or more strengths or routes of administration with clearly different therapeutic uses.”(3) For example, finasteride is classified as a dermatological drug if low-dose and as a drug for benign prostatic hyperplasia if high-dose. Therefore, for a single strength and route of administration, there is only “one code, the main indication being decided on the basis of the available information.” (3)
+Moreover, while the ATC system is organised around therapeutic
+indications, not all indications are coded. This is because “A medicinal
+substance can be given more than one ATC code **ONLY** if it is
+available in two or more strengths or routes of administration with
+clearly different therapeutic uses.”(3) For example, finasteride is
+classified as a dermatological drug if low-dose and as a drug for benign
+prostatic hyperplasia if high-dose. Therefore, for a single strength and
+route of administration, there is only “one code, the main indication
+being decided on the basis of the available information.” (3)
 
-Moreover, the “main” WHO ATC indication is not necessarily the commonest indication. For example, in a US study of drug “mentions” in a representative database, &gt;80% of mentions for gabapentin and amitriptyline were for off-label indications, predominantly pain.(4) Similarly, in a Canadian study of antidepressant use in primary care, amitriptyline was “almost exclusively prescribed for off-label indications” most commonly for pain, insomnia, and migraine.(5) These published findings are consistent with the clinical observation of members of our steering committee (and an independent epileptologist), that these drugs are predominantly used for pain. Despite this, the WHO ATC scheme does not include pain as an indication for these drugs, classifying gabapentin and pregabalin exclusively as antiepileptics and amitriptyline exclusively as an antidepressant.
+Moreover, the “main” WHO ATC indication is not necessarily the commonest
+indication. For example, in a US study of drug “mentions” in a
+representative database, \>80% of mentions for gabapentin and
+amitriptyline were for off-label indications, predominantly pain.(4)
+Similarly, in a Canadian study of antidepressant use in primary care,
+amitriptyline was “almost exclusively prescribed for off-label
+indications” most commonly for pain, insomnia, and migraine.(5) These
+published findings are consistent with the clinical observation of
+members of our steering committee (and an independent epileptologist),
+that these drugs are predominantly used for pain. Despite this, the WHO
+ATC scheme does not include pain as an indication for these drugs,
+classifying gabapentin and pregabalin exclusively as antiepileptics and
+amitriptyline exclusively as an antidepressant.
 
-Nor is there necessarily a code where routes/strengths do differ. For example, prochlorperazine is defined solely as an antipsychotic, despite being available in a buccal preparation for nausea. IN this case the accompanying note states that “The substances in this group are sometimes used for other indications in much lower doses”.
+Nor is there necessarily a code where routes/strengths do differ. For
+example, prochlorperazine is defined solely as an antipsychotic, despite
+being available in a buccal preparation for nausea. IN this case the
+accompanying note states that “The substances in this group are
+sometimes used for other indications in much lower doses”.
 
-We have attempted to incorporate these nuances into the drug-based comorbidity definitions given in Table 1.
+We have attempted to incorporate these nuances into the drug-based
+comorbidity definitions given in Table 1.
 
-An additional complexity is caused by the fact that for certain trials, sponsors have only provided less specific codes (eg 3 or 4-character codes) and not 5-character codes which uniquely identify each class (7-character codes identifying each agent). Where this is the case, but the drug name with or without route and indication information have been provided, we will assign each potentially-relevant drug to a WHO ATC code using the US Government drug meta-thesaurus (RXNORM). Where neither the drug name, nor sufficiently detailed drug-class information is provided, we will adopt a workaround suited to each definition (Table 1). The number of trials where this approach was needed will be reported.
+An additional complexity is caused by the fact that for certain trials,
+sponsors have only provided less specific codes (eg 3 or 4-character
+codes) and not 5-character codes which uniquely identify each class
+(7-character codes identifying each agent). Where this is the case, but
+the drug name with or without route and indication information have been
+provided, we will assign each potentially-relevant drug to a WHO ATC
+code using the US Government drug meta-thesaurus (RXNORM). Where neither
+the drug name, nor sufficiently detailed drug-class information is
+provided, we will adopt a workaround suited to each definition (Table
+1). The number of trials where this approach was needed will be
+reported.
 
-The proportion of participants with and without comorbid diseases based on concomitant medications with and without relevant medical histories (in trials where these have been provided) will be compared in 2x2 contingency tables. We expect to find a higher proportion with the relevant condition from the reported medical history among those participants meeting the concomitant medication definitions (eg 80% versus 10% reporting diabetes in participants taking/not taking antidiabetic medications).
+The proportion of participants with and without comorbid diseases based
+on concomitant medications with and without relevant medical histories
+(in trials where these have been provided) will be compared in 2x2
+contingency tables. We expect to find a higher proportion with the
+relevant condition from the reported medical history among those
+participants meeting the concomitant medication definitions (eg 80%
+versus 10% reporting diabetes in participants taking/not taking
+antidiabetic medications).
 
-We had initially planned to add skin disease to the list of diagnoses, however we found that topical therapies were very poorly recorded in the trial data and so have opted to drop this from the comorbid disease definitions.
+We had initially planned to add skin disease to the list of diagnoses,
+however we found that topical therapies were very poorly recorded in the
+trial data and so have opted to drop this from the comorbid disease
+definitions.
 
-We mapped the ATC codes to Read codes (which are used in the SAIL data) offline, using the NHS Business Authority mappings and, for some more recent drugs such as novel antidiabetic drugs, by manually mapping between ATC and Read codes. The mapping was very good, even retaining information on route. For example the read code for topical beclomethasone preparations mapped to different ATC codes to those for oral preparations.
+We mapped the ATC codes to Read codes (which are used in the SAIL data)
+offline, using the NHS Business Authority mappings and, for some more
+recent drugs such as novel antidiabetic drugs, by manually mapping
+between ATC and Read codes. The mapping was very good, even retaining
+information on route. For example the read code for topical
+beclomethasone preparations mapped to different ATC codes to those for
+oral
+preparations.
 
 ### Table 1 Concomitant medication classes - first 6 rows only
 
 | Condition                                                             | ATC codes | ATC label                        | Exceptions/more specific definitions/notes                                                                                                                                                                                           |
-|:----------------------------------------------------------------------|:----------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------------------------------------------------------- | :-------- | :------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Acid related disorders                                                | A02A      | ANTACIDS                         |                                                                                                                                                                                                                                      |
 |                                                                       | A02B      | DRUGS FOR ACID RELATED DISORDERS | Exclude where also taking M01A ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS, NON-STEROIDS, or B01 (antithrombotic) drugs                                                                                                              |
 | Diabetes mellitus                                                     | A10       | DRUGS USED IN DIABETES           | Note this includes insulins and analogues, other blood glucose lowering drugs etc. It does not include cardiovascular prevention drugs We do not exclude metformin, although this is used to treat Polycystic ovary syndrome (PCOS). |
@@ -57,211 +141,463 @@ We mapped the ATC codes to Read codes (which are used in the SAIL data) offline,
 |                                                                       | B01AE     | Direct thrombin inhibitors       | Do not include if only 4-level codes are available.                                                                                                                                                                                  |
 |                                                                       | B01AF     | Direct factor Xa inhibitors      | Do not include if only 4-level codes are available.                                                                                                                                                                                  |
 
-Height and weight
------------------
+## Height and weight
 
-We will use body mass index (BMI) where this is provided, or calculate it from the weight and height (weight in kg/height in meters-squared). Where multiple BMI measures are available, we will use the most recent BMI measurement prior to the initiation of the intervention. BMI will be standardised to the BMI in the adult population from NHANES 2015-16 (see Blood Pressure section for details). We will treat BMI as a continuous variable in the modelling.
+We will use body mass index (BMI) where this is provided, or calculate
+it from the weight and height (weight in kg/height in meters-squared).
+Where multiple BMI measures are available, we will use the most recent
+BMI measurement prior to the initiation of the intervention. BMI will be
+standardised to the BMI in the adult population from NHANES 2015-16 (see
+Blood Pressure section for details). We will treat BMI as a continuous
+variable in the modelling.
 
-Blood pressure
---------------
+## Blood pressure
 
-In the largest study of blood pressure, a meta-analysis of 958,074 participants from 61 prospective studies, mid-blood pressure (0.5 x DBP + 0.5 x SBP) performed slightly better than SBP alone for both stroke and ischaemic heart disease risk.(6) Consequently, we will use this measure in our models.
+In the largest study of blood pressure, a meta-analysis of 958,074
+participants from 61 prospective studies, mid-blood pressure (0.5 x DBP
++ 0.5 x SBP) performed slightly better than SBP alone for both stroke
+and ischaemic heart disease risk.(6) Consequently, we will use this
+measure in our models.
 
-In a simulation study, with SBP as the outcome variable, Tobin et al demonstrated that adding a suitable constant (eg 10mmHg) for patients taking anti-hypertensive reduced bias as well as any of several more complex methods, whereas including a dummy variable for treatment introduced bias.(7) We will use this approach for SBP as a covariate in the covariate-treatment interaction models, under the assumption that the true underlying blood pressure is most relevant to the analysis. We will similarly add a constant of 5 mmHg to the diastolic blood pressure. Both constants will be added prior to calculating the mid-blood pressure.
+In a simulation study, with SBP as the outcome variable, Tobin et al
+demonstrated that adding a suitable constant (eg 10mmHg) for patients
+taking anti-hypertensive reduced bias as well as any of several more
+complex methods, whereas including a dummy variable for treatment
+introduced bias.(7) We will use this approach for SBP as a covariate in
+the covariate-treatment interaction models, under the assumption that
+the true underlying blood pressure is most relevant to the analysis. We
+will similarly add a constant of 5 mmHg to the diastolic blood pressure.
+Both constants will be added prior to calculating the mid-blood
+pressure.
 
-If a participant is taking a drug from any of the following drug classes prior to initiating the study drug we will perform the correction; C02 – ANTIHYPERTENSIVES, C07 - beta-Adrenergic Blocking Agents, C08 - CALCIUM CHANNEL BLOCKERS or C09 - AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM. We will perform the correction only once regardless of the number of different antihypertensive drugs any participant is taking, and regardless of whether the drug was given for hypertension or a different indication (eg a calcium channel blocker for angina).
+If a participant is taking a drug from any of the following drug classes
+prior to initiating the study drug we will perform the correction; C02 –
+ANTIHYPERTENSIVES, C07 - beta-Adrenergic Blocking Agents, C08 - CALCIUM
+CHANNEL BLOCKERS or C09 - AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM.
+We will perform the correction only once regardless of the number of
+different antihypertensive drugs any participant is taking, and
+regardless of whether the drug was given for hypertension or a different
+indication (eg a calcium channel blocker for angina).
 
-Since blood pressure shows considerable within-person variability, we will take the mean of all measures obtained prior to initiation of the drug (ie those from screening and randomisation visits). Having done so we will standardise the blood pressure results to the adult blood pressure results from NHANES 2015-16 (Table 2).
+Since blood pressure shows considerable within-person variability, we
+will take the mean of all measures obtained prior to initiation of the
+drug (ie those from screening and randomisation visits). Having done so
+we will standardise the blood pressure results to the adult blood
+pressure results from NHANES 2015-16 (Table
+2).
 
-### Table 2 Adult (aged &gt;=18) NHANES 2015-16 blood pressure averaged over (up to) 3 recordings
+### Table 2 Adult (aged \>=18) NHANES 2015-16 blood pressure averaged over (up to) 3 recordings
 
 | Blood Pressure | Mean | Standard deviation |
-|----------------|------|--------------------|
+| -------------- | ---- | ------------------ |
 | Diastolic      | 70   | 12                 |
 | Systolic       | 123  | 17                 |
 
-For data see [*https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015*](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015).
+For data see
+[*https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015*](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015).
 
-Laboratory test based definitions
-=================================
+# Laboratory test based definitions
 
-Liver impairment
-----------------
+## Liver impairment
 
-We will use the Fibrosis-4 (FIB4) index to examine for the presence of liver disease. FIB4 will be calculated as follows:-
+We will use the Fibrosis-4 (FIB4) index to examine for the presence of
+liver disease. FIB4 will be calculated as follows:-
 
-$$FIB4 = \\frac{age \\times AST}{platelet count\\times \\sqrt{ALT}} $$
+\[FIB4 = \frac{age \times AST}{platelet count\times \sqrt{ALT}} \]
 
-Age is measured in years, AST and ALT in international units per litre and platelet counts as 10^9 platelets per litre.
+Age is measured in years, AST and ALT in international units per litre
+and platelet counts as 10^9 platelets per litre.
 
-This will not be calculated for patients with anaemia or known inflammatory diseases, which for the purposes of this analysis we will define as the inflammatory arthropathies and inflammatory bowel diseases. We will not include conditions which feature lower levels of systemic inflammation (eg metabolic syndrome, COPD). Operationally, any participant meeting the drug-based definition for “Inflammatory arthropathies, inflammatory bowel disease, systemic lupus erythematosus and connective tissue diseases” will not have a FIB4 calculated. For trials where inflammatory arthropathies or inflammatory bowel diseases conditions are indications, the FIB4 will not be estimated. Where these are comorbidities (defined as per concomitant medications based definitions), the participant will be assigned the median FIB4 value for the trial.
+This will not be calculated for patients with anaemia or known
+inflammatory diseases, which for the purposes of this analysis we will
+define as the inflammatory arthropathies and inflammatory bowel
+diseases. We will not include conditions which feature lower levels of
+systemic inflammation (eg metabolic syndrome, COPD). Operationally, any
+participant meeting the drug-based definition for “Inflammatory
+arthropathies, inflammatory bowel disease, systemic lupus erythematosus
+and connective tissue diseases” will not have a FIB4 calculated. For
+trials where inflammatory arthropathies or inflammatory bowel diseases
+conditions are indications, the FIB4 will not be estimated. Where these
+are comorbidities (defined as per concomitant medications based
+definitions), the participant will be assigned the median FIB4 value for
+the trial.
 
-FIB4 will be standardised to FIB4 derived from component variables recorded in NHANES 2015-16 and modelled as a continuous variable.
+FIB4 will be standardised to FIB4 derived from component variables
+recorded in NHANES 2015-16 and modelled as a continuous variable.
 
-Renal impairment
-----------------
+## Renal impairment
 
-Some of the trials may have been conducted in countries or sites where creatinine levels have not been standardised to an isotope dilution mass spectrometry (IDMS) reference measurement procedure. Therefore we will use the “Creatinine Standardization Recommendations (for countries or regions that are introducing or have not completed standardization of creatinine calibration)” from the NIDDK recommendations (<https://www.niddk.nih.gov/health-information/communication-programs/nkdep/laboratory-evaluation/glomerular-filtration-rate/creatinine-standardization/recommendations>).
+Some of the trials may have been conducted in countries or sites where
+creatinine levels have not been standardised to an isotope dilution mass
+spectrometry (IDMS) reference measurement procedure. Therefore we will
+use the “Creatinine Standardization Recommendations (for countries or
+regions that are introducing or have not completed standardization of
+creatinine calibration)” from the NIDDK recommendations
+(<https://www.niddk.nih.gov/health-information/communication-programs/nkdep/laboratory-evaluation/glomerular-filtration-rate/creatinine-standardization/recommendations>).
 
-This means that we will use the “Original Modification of Diet in Renal Disease (MDRD) Study equation for routine methods that have not been calibrated to be traceable to IDMS” and the “CKD-EPI or IDMS-traceable MDRD Study equation for estimating GFR in adults” for laboratory results where the creatinine measurement “has its calibration traceable to IDMS”. For consistency, we will use the IDMS-traceable MDRD Study equation (GFR (mL/min/1.73 m2) = 175 × (Scr)<sup>-1.154</sup> × (Age)<sup>-0.203</sup> × (0.742 if female) × (1.212 if African American) in the latter case.
+This means that we will use the “Original Modification of Diet in Renal
+Disease (MDRD) Study equation for routine methods that have not been
+calibrated to be traceable to IDMS” and the “CKD-EPI or IDMS-traceable
+MDRD Study equation for estimating GFR in adults” for laboratory results
+where the creatinine measurement “has its calibration traceable to
+IDMS”. For consistency, we will use the IDMS-traceable MDRD Study
+equation (GFR (mL/min/1.73 m2) = 175 × (Scr)<sup>-1.154</sup> ×
+(Age)<sup>-0.203</sup> × (0.742 if female) × (1.212 if African American)
+in the latter case.
 
-The eGFR estimated from either method is normalized to 1.73 m² body surface area. As per the NIDDK guidance for providers (<https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/ckd-drug-dosing-providers>) we will adjust for body surface area for people who are “very large or very small”. We will define these groups as having a height, weight or BMI below the 10<sup>th</sup> or above the 90<sup>th</sup> centile based on data from NHANES 2015-2016.
+The eGFR estimated from either method is normalized to 1.73 m² body
+surface area. As per the NIDDK guidance for providers
+(<https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/ckd-drug-dosing-providers>)
+we will adjust for body surface area for people who are “very large or
+very small”. We will define these groups as having a height, weight or
+BMI below the 10<sup>th</sup> or above the 90<sup>th</sup> centile based
+on data from NHANES 2015-2016.
 
 ### Table 3 Quantiles for Height and Weight for NHANES 2015-2016
 
 | Quantile                   | Weight (kg) | Height (cm) | BMI |
-|----------------------------|-------------|-------------|-----|
+| -------------------------- | ----------- | ----------- | --- |
 | 10<sup>th</sup> percentile | 58          | 155         | 22  |
 | 90<sup>th</sup> percentile | 111         | 182         | 38  |
 
-For data see <https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015>
+For data see
+<https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015>
 
-We estimate body surface area using the Mosteller equation(8) and use this to adjust the eGFR as per the NIDDK recommendation (eGFR/1.73m<sup>2</sup> x estimated BSA = eGFR).
+We estimate body surface area using the Mosteller equation(8) and use
+this to adjust the eGFR as per the NIDDK recommendation
+(eGFR/1.73m<sup>2</sup> x estimated BSA = eGFR).
 
-Having derived the eGFR we will standardise this to eGFR derived from creatinine measured in NHANES 2015-16 using the IDMS-traceable MDRD Study equation (as the creatinine measure in NHANES is IDMS-standardised) and model it as a continuous variable.
+Having derived the eGFR we will standardise this to eGFR derived from
+creatinine measured in NHANES 2015-16 using the IDMS-traceable MDRD
+Study equation (as the creatinine measure in NHANES is
+IDMS-standardised) and model it as a continuous variable.
 
-Although for clinical reporting eGFR levels above 60 are simply reported as “&gt;=60” we will not similarly truncate our values, as we are allowing for non-linearity in the modelling.
+Although for clinical reporting eGFR levels above 60 are simply reported
+as “\>=60” we will not similarly truncate our values, as we are allowing
+for non-linearity in the modelling.
 
-Anaemia
--------
+## Anaemia
 
-Since the relationship between haemoglobin and disease states is markedly non-linear (with haemoglobin levels above and below the normal range considered abnormal), we will model haemoglobin using a dichotomous variable for anaemia present/absent, and use an additional continuous term for the severity of anaemia. We propose to define anaemia as per the WHO definitions (<http://apps.who.int/iris/bitstream/10665/85839/3/WHO_NMH_NHD_MNM_11.1_eng.pdf> ). This defines anaemia using Hb in g/dl as follows.
+Since the relationship between haemoglobin and disease states is
+markedly non-linear (with haemoglobin levels above and below the normal
+range considered abnormal), we will model haemoglobin using a
+dichotomous variable for anaemia present/absent, and use an additional
+continuous term for the severity of anaemia. We propose to define
+anaemia as per the WHO definitions
+(<http://apps.who.int/iris/bitstream/10665/85839/3/WHO_NMH_NHD_MNM_11.1_eng.pdf>
+). This defines anaemia using Hb in g/dl as
+follows.
 
 ### Table 4 Anaemia
 
 |                                | Not anaemia | Mild anaemia | Moderate anaemia |
-|--------------------------------|-------------|--------------|------------------|
-| Non-pregnant women (≥15 years) | ≥12         | &lt;12       | &lt;11           |
-| Men (≥15 years)                | ≥13         | &lt;13       | &lt;11           |
+| ------------------------------ | ----------- | ------------ | ---------------- |
+| Non-pregnant women (≥15 years) | ≥12         | \<12         | \<11             |
+| Men (≥15 years)                | ≥13         | \<13         | \<11             |
 
-We will use the “Not anaemia” threshold to define anaemia as present/absent. For the continuous component of the variable we will standardise Haemoglobin to the NHANES 2015-16 laboratory results (<https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&CycleBeginYear=2015>).
+We will use the “Not anaemia” threshold to define anaemia as
+present/absent. For the continuous component of the variable we will
+standardise Haemoglobin to the NHANES 2015-16 laboratory results
+(<https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&CycleBeginYear=2015>).
 
-Diagnostic code mapping
------------------------
+## Diagnostic code mapping
 
-Each of the diagnoses above has been mapped to the closest available WHO ICD-10 codes and US Clinical Classifications Software codes.(11) The latter is an established aggregation system for ICD-10CM and ICD-10 codes for use in health services research.
+Each of the diagnoses above has been mapped to the closest available WHO
+ICD-10 codes and US Clinical Classifications Software codes.(11) The
+latter is an established aggregation system for ICD-10CM and ICD-10
+codes for use in health services research.
 
-Statistical analysis
-====================
+# Statistical analysis
 
-Prevalence of separate comorbidities
-------------------------------------
+## Prevalence of separate comorbidities
 
-For each condition, we will estimate the prevalence of each comorbidity using simple proportions. Continuous variables, unless specified otherwise above, will be dichotomised at the 75<sup>th</sup> centile.
+For each condition, we will estimate the prevalence of each comorbidity
+using simple proportions. Continuous variables, unless specified
+otherwise above, will be dichotomised at the 75<sup>th</sup> centile.
 
-Comorbidity count
------------------
+## Comorbidity count
 
-We will calculate a comorbidity count for each patient based on obesity, renal impairment, liver impairment, anaemia and each of the concomitant medicine derived terms. Although there are a number of comorbidity counting methods described in the existing literature, the coefficients for these were derived based on the prediction of outcomes such as healthcare utilisation and/or mortality.(10) We are not aware of any comorbidity score with weightings based on treatment efficacy. Consequently, we will use a simple summation of the categorical (0/1) and continuous variables, with a view to capturing a measure of the total “multimorbid” burden. For continuous variables, we will standardise the variable so that the 75<sup>th</sup> centile is scored 1 and the 25<sup>th</sup> centile scored zero.
+We will calculate a comorbidity count for each patient based on obesity,
+renal impairment, liver impairment, anaemia and each of the concomitant
+medicine derived terms. Although there are a number of comorbidity
+counting methods described in the existing literature, the coefficients
+for these were derived based on the prediction of outcomes such as
+healthcare utilisation and/or mortality.(10) We are not aware of any
+comorbidity score with weightings based on treatment efficacy.
+Consequently, we will use a simple summation of the categorical (0/1)
+and continuous variables, with a view to capturing a measure of the
+total “multimorbid” burden. For continuous variables, we will
+standardise the variable so that the 75<sup>th</sup> centile is scored 1
+and the 25<sup>th</sup> centile scored zero.
 
-For the comorbidity count calculation, the concomitant medication definition pairs will be collapsed into a single condition.
+For the comorbidity count calculation, the concomitant medication
+definition pairs will be collapsed into a single condition.
 
 ### Table 5 Combining concomitant medication based definitions
 
 | Definition 1 | Definition 2             |
-|--------------|--------------------------|
+| ------------ | ------------------------ |
 | Pain         | Migraine                 |
 | Pain         | Rheumatologic conditions |
 
-We will summarise these counts as the proportion of patients with each comorbidity count, stratified by index condition, age and sex.
+We will summarise these counts as the proportion of patients with each
+comorbidity count, stratified by index condition, age and sex.
 
-For the main comparison between trial and primary care data we will use the concomitant medication based definitions. This is because the recording of BMI, blood pressure, AST, ALT, platelets and haemoglobin are likely to be less consistent and less reliably coded than concomitant medication definitions. The non-concomitant medication based components will be included in secondary analysis if these are found to be recorded in a reasonable proportion of patients. We will identify the Read codes for these components in an iterative process, to attempt to obtain the most complete data available.
+For the main comparison between trial and primary care data we will use
+the concomitant medication based definitions. This is because the
+recording of BMI, blood pressure, AST, ALT, platelets and haemoglobin
+are likely to be less consistent and less reliably coded than
+concomitant medication definitions. The non-concomitant medication based
+components will be included in secondary analysis if these are found to
+be recorded in a reasonable proportion of patients. We will identify the
+Read codes for these components in an iterative process, to attempt to
+obtain the most complete data available.
 
-Estimate incidence of subsequent events
----------------------------------------
+## Estimate incidence of subsequent events
 
-We will choose one or more index condition(s) for this analysis where that condition is common, where comorbidity among people with that condition is also common, and where there is some evidence from my (separate) analysis of trial data that treatment efficacy may differ by comorbidity status.
+We will choose one or more index condition(s) for this analysis where
+that condition is common, where comorbidity among people with that
+condition is also common, and where there is some evidence from my
+(separate) analysis of trial data that treatment efficacy may differ by
+comorbidity status.
 
-For these selected index conditions, we will fit time to event models for events of interest (hospitalisations and deaths). We will fit Cox proportional hazard models (or possibly parametric survival models) treating competing events as censoring events (ie these are cause-specific hazard ratios). We will include age, sex and comorbidities in the modelling. Continuous measures of comorbidity (eg FIB-4) will be treated as continuous variables, with fractional polynomials or cubic splines to allow for non-linearity. We will include main terms and interactions only where these both improve model fit and have an appreciable effect size (eg a hazard ratio of less than 0.96 or more than 1.04 for binary variables/per standard deviation in continuous variables).
+For these selected index conditions, we will fit time to event models
+for events of interest (hospitalisations and deaths). We will fit Cox
+proportional hazard models (or possibly parametric survival models)
+treating competing events as censoring events (ie these are
+cause-specific hazard ratios). We will include age, sex and
+comorbidities in the modelling. Continuous measures of comorbidity (eg
+FIB-4) will be treated as continuous variables, with fractional
+polynomials or cubic splines to allow for non-linearity. We will include
+main terms and interactions only where these both improve model fit and
+have an appreciable effect size (eg a hazard ratio of less than 0.96 or
+more than 1.04 for binary variables/per standard deviation in continuous
+variables).
 
-Where small numbers of participants have a comorbidity we will drop that from the main analysis. We will also explore whether inclusion of specific comorbidities or comorbiditity counts (as a score) is a better predictor of subsequent events.
+Where small numbers of participants have a comorbidity we will drop that
+from the main analysis. We will also explore whether inclusion of
+specific comorbidities or comorbiditity counts (as a score) is a better
+predictor of subsequent events.
 
-Summarise comorbidity correlations
-----------------------------------
+## Summarise comorbidity correlations
 
-If time permits we will also estimate correlations between comorbidities in hierarchical multivariate probit models. The models will include age, sex and index condition as covariates and will be fit in a Bayesian framework using an approach similar to that described by Pollock et al (12). The output of this work will be in the form of network diagrams illustrating the correlation between comorbidities for different index conditions.
+If time permits we will also estimate correlations between comorbidities
+in hierarchical multivariate probit models. The models will include age,
+sex and index condition as covariates and will be fit in a Bayesian
+framework using an approach similar to that described by Pollock et al
+(12). The output of this work will be in the form of network diagrams
+illustrating the correlation between comorbidities for different index
+conditions.
 
-Time period for analysis
-------------------------
+## Time period for analysis
 
-We conducted a preliminary inspection of the SAIL data to determine the number of patients with a prescription for **any** of the drugs of interest (including "excluded" drugs aspirin, amitriptyline etc). This was done prior to examining specific comorbid conditions, it was also done prior to identifying which patients had the index conditions (and indeed prior to specifying the Read codes for the index conditions). On conducting this analysis we found that the number of patients was low prior to 2010 and plateaued in 2011. For this reason we specified the 2011 to 2012 time period to identify concomitant diseases.
+We conducted a preliminary inspection of the SAIL data to determine the
+number of patients with a prescription for **any** of the drugs of
+interest (including “excluded” drugs aspirin, amitriptyline etc). This
+was done prior to examining specific comorbid conditions, it was also
+done prior to identifying which patients had the index conditions (and
+indeed prior to specifying the Read codes for the index conditions). On
+conducting this analysis we found that the number of patients was low
+prior to 2010 and plateaued in 2011. For this reason we specified the
+2011 to 2012 time period to identify concomitant diseases.
 
-After this analysis, we identified an error in the concomitant medication coding (a three character ATC code was inadvertently treated as a 4-character ATC code) and updated the definitions accordingly. This was done at the same time that the Read code definitions of index conditions were written (see below). Both the Read code definitions of index conditions and the updated concomitant medication definitions will be uploaded to the SAIL platform together. As such, this change in drug-definitions was done prior to identifying the patients who have each index condition.
+After this analysis, we identified an error in the concomitant
+medication coding (a three character ATC code was inadvertently treated
+as a 4-character ATC code) and updated the definitions accordingly. This
+was done at the same time that the Read code definitions of index
+conditions were written (see below). Both the Read code definitions of
+index conditions and the updated concomitant medication definitions will
+be uploaded to the SAIL platform together. As such, this change in
+drug-definitions was done prior to identifying the patients who have
+each index condition.
 
-Denominator population
-----------------------
+## Denominator population
 
-The denominator population will be defined as those patients identified as being registered with a GP (defined using the SAIL algorithm for defining registered patients) throughout all of 2011. Of these, each patient will be assigned to one or more index conditions (Table 6) according to the list of Read codes at the foot of this document (Table A1). The patients will be defined as having the diagnosis if these codes were recorded in any of the records. For all of the index conditions except myocardial infarction and arthroplasty we will not impose any time restrictions. We chose not to do so as these are all chronic diseases.
+The denominator population will be defined as those patients identified
+as being registered with a GP (defined using the SAIL algorithm for
+defining registered patients) throughout all of 2011. Of these, each
+patient will be assigned to one or more index conditions (Table 6)
+according to the list of Read codes at the foot of this document (Table
+A1). The patients will be defined as having the diagnosis if these codes
+were recorded in any of the records. For all of the index conditions
+except myocardial infarction and arthroplasty we will not impose any
+time restrictions. We chose not to do so as these are all chronic
+diseases.
 
-In a sensitivity analysis we will also include in the denominator those patients who were not registered throughout 2011 because they died during that year. Lower comorbidity counts in the primary care population could result from including such patients (because a prescription may not have been issued during the period when they were alive) or excluding such patients (because these are likely to be the sickest patients). Therefore, we opted to exclude them for the main analysis because patients expected to die within a year would be unlikely to be included in many clinical trials.
+In a sensitivity analysis we will also include in the denominator those
+patients who were not registered throughout 2011 because they died
+during that year. Lower comorbidity counts in the primary care
+population could result from including such patients (because a
+prescription may not have been issued during the period when they were
+alive) or excluding such patients (because these are likely to be the
+sickest patients). Therefore, we opted to exclude them for the main
+analysis because patients expected to die within a year would be
+unlikely to be included in many clinical trials.
 
-We derived our read codes from existing code lists whenever these were available. Sources included QOF Read codes as well as non-QOf lists from [ClinicalCodes.org](https://clinicalcodes.rss.mhs.man.ac.uk/) as well as codes from the [Barnett et al 2012](https://doi.org/10.1016/S0140-6736(12)60240-2) paper.
+We derived our read codes from existing code lists whenever these were
+available. Sources included QOF Read codes as well as non-QOf lists from
+[ClinicalCodes.org](https://clinicalcodes.rss.mhs.man.ac.uk/) as well as
+codes from the [Barnett et
+al 2012](https://doi.org/10.1016/S0140-6736\(12\)60240-2) paper.
 
-Note that the groups are not necessarily mutually exclusive as some patients will have more than one of the eligible diagnoses.
+Note that the groups are not necessarily mutually exclusive as some
+patients will have more than one of the eligible diagnoses.
 
-Table 6 List of index conditions
---------------------------------
+## Table 6 List of index conditions
 
-| Condition                                 |  Number of Read codes|
-|:------------------------------------------|---------------------:|
-| Alzheimer's Disease                       |                     9|
-| Asthma                                    |                    85|
-| Atrial Fibrillation                       |                    11|
-| Axial Spondyloarthritis                   |                     5|
-| Benign Prostatic Hyperplasia              |                     5|
-| Chronic Idiopathic Urticaria (CIU)        |                     1|
-| Dementia (any)                            |                    52|
-| Diabetes Mellitus, Type 2                 |                    50|
-| Epilepsy                                  |                    98|
-| Erectile dysfunction                      |                    19|
-| Hypertension                              |                    61|
-| Hypertension, Pulmonary                   |                     3|
-| Inflammatory bowel disease                |                    44|
-| Migraine                                  |                    38|
-| Osteoarthritis                            |                   128|
-| Osteoporosis                              |                    71|
-| Parkinson's disease (all)                 |                    21|
-| Parkinson's disease (excluding secondary) |                    11|
-| Psoriasis                                 |                    31|
-| Psoriatic arthropathy                     |                     7|
-| Pulmonary Disease, Chronic Obstructive    |                    45|
-| Pulmonary fibrosis                        |                    12|
-| Restless legs syndrome                    |                     1|
-| Rheumatoid arthritis                      |                    51|
-| Systemic Lupus Erythematosus              |                    12|
-| Thromboembolism                           |                    95|
+| Condition                                 | Number of Read codes |
+| :---------------------------------------- | -------------------: |
+| Alzheimer’s Disease                       |                    9 |
+| Asthma                                    |                   85 |
+| Atrial Fibrillation                       |                   11 |
+| Axial Spondyloarthritis                   |                    5 |
+| Benign Prostatic Hyperplasia              |                    5 |
+| Chronic Idiopathic Urticaria (CIU)        |                    1 |
+| Dementia (any)                            |                   52 |
+| Diabetes Mellitus, Type 2                 |                   50 |
+| Epilepsy                                  |                   98 |
+| Erectile dysfunction                      |                   19 |
+| Hypertension                              |                   61 |
+| Hypertension, Pulmonary                   |                    3 |
+| Inflammatory bowel disease                |                   44 |
+| Migraine                                  |                   38 |
+| Osteoarthritis                            |                  128 |
+| Osteoporosis                              |                   71 |
+| Parkinson’s disease (all)                 |                   21 |
+| Parkinson’s disease (excluding secondary) |                   11 |
+| Psoriasis                                 |                   31 |
+| Psoriatic arthropathy                     |                    7 |
+| Pulmonary Disease, Chronic Obstructive    |                   45 |
+| Pulmonary fibrosis                        |                   12 |
+| Restless legs syndrome                    |                    1 |
+| Rheumatoid arthritis                      |                   51 |
+| Systemic Lupus Erythematosus              |                   12 |
+| Thromboembolism                           |                   95 |
 
-Where there are multiple definitions in the above table (eg Dementia (Alzheimer's) and Dementia (any), the following definitions will be used for the primary and secondary analyses respectively.
+Where there are multiple definitions in the above table (eg Dementia
+(Alzheimer’s) and Dementia (any), the following definitions will be used
+for the primary and secondary analyses
+respectively.
 
-Table 7 Multiple diagnostic criteria, primary and secondary analyses
---------------------------------------------------------------------
+## Table 7 Multiple diagnostic criteria, primary and secondary analyses
 
 | Primary analysis                          | Secondary analysis        |
-|-------------------------------------------|---------------------------|
-| Alzheimer's Disease                       | Dementia (any)            |
-| Parkinson's disease (excluding secondary) | Parkinson's disease (all) |
+| ----------------------------------------- | ------------------------- |
+| Alzheimer’s Disease                       | Dementia (any)            |
+| Parkinson’s disease (excluding secondary) | Parkinson’s disease (all) |
 
-We have generally avoided using drugs as part of the definition of index conditions to avoid the risk of biasing the findings towards patients who are more likely to be prescribed drugs, by making having received a drug part of the inclusion criterion. However, in the case of migraine, the definition includes one or more of the listed Read codes for migraine **as well** as a prescription for a migraine drug (WHO ATC code N02C, as per the concomitant medication analysis). Similarly, we required the thromboembolism definition to include a prescription of an anticoagulant drug (B01AA, B01AE or B01AF as per the concomitant medication analysis.)
+We have generally avoided using drugs as part of the definition of index
+conditions to avoid the risk of biasing the findings towards patients
+who are more likely to be prescribed drugs, by making having received a
+drug part of the inclusion criterion. However, in the case of migraine,
+the definition includes one or more of the listed Read codes for
+migraine **as well** as a prescription for a migraine drug (WHO ATC code
+N02C, as per the concomitant medication analysis). Similarly, we
+required the thromboembolism definition to include a prescription of an
+anticoagulant drug (B01AA, B01AE or B01AF as per the concomitant
+medication analysis.) We later decided to apply similar restrictions to
+the definitions for asthma, hypertension and type 2 diabetes.
 
-Two of the index diagnoses relate to events rather than chronic illnesses; myocardial infarction and arthroplasty (knee and hip). These episodes will be defined using hospital episode data (coded via ICD10 and OPCS respectively.) The codes for myocardial infarction are ICD-10 codes I21 and I22. The codes for hip and knee arthroplasty are those described by The National Joint Registry (NJR) as being suitable for translating NJR procedures into OPCS codes (<http://www.njrcentre.org.uk/njrcentre/Portals/0/Documents/England/Data%20collection%20forms/OPCS%20Procedure%20codes%20relevant%20to%20NJRv4.pdf>) (Table A2). In both cases we will define the patient as having the index condition if any of the relevant codes were included in any position from 2012-01-01 to 2012-12-01 for patients defined as being in the denominator population. We had previously selected a 3-month period but opted to extend this to include more patients. This decision was taken before calculating comorbidity counts for myocardial infarction adn/or hip arthroplasty.
+Two of the index diagnoses relate to events rather than chronic
+illnesses; myocardial infarction and arthroplasty (knee and hip). These
+episodes will be defined using hospital episode data (coded via ICD10
+and OPCS respectively.) The codes for myocardial infarction are ICD-10
+codes I21 and I22. The codes for hip and knee arthroplasty are those
+described by The National Joint Registry (NJR) as being suitable for
+translating NJR procedures into OPCS codes
+(<http://www.njrcentre.org.uk/njrcentre/Portals/0/Documents/England/Data%20collection%20forms/OPCS%20Procedure%20codes%20relevant%20to%20NJRv4.pdf>)
+(Table A2). In both cases we will define the patient as having the index
+condition if any of the relevant codes were included in any position
+from 2012-01-01 to 2012-12-01 for patients defined as being in the
+denominator population. We had previously selected a 3-month period but
+opted to extend this to include more patients. This decision was taken
+before calculating comorbidity counts for myocardial infarction adn/or
+hip arthroplasty.
 
-Age and sex standardisation
-===========================
+# Age and sex standardisation
 
-In the primary analysis we will compare comorbidity counts in the SAIL and trial datasets having standardised the SAIL data to the number of trial participants with each indication in each age and sex band. Briefly, for each indication, we will apply proportions with each comorbidity count for each age and sex specific stratum to the age and sex distribution in the trial data to get the expected comorbidity counts for each stratum, then sum this across strata. This is analogous to direct standardisation.
+In the primary analysis we will compare comorbidity counts in the SAIL
+and trial datasets having standardised the SAIL data to the number of
+trial participants with each indication in each age and sex band.
+Briefly, for each indication, we will apply proportions with each
+comorbidity count for each age and sex specific stratum to the age and
+sex distribution in the trial data to get the expected comorbidity
+counts for each stratum, then sum this across strata. This is analogous
+to direct standardisation.
 
-The trial-specific strata will be obtained from summary statistics for the sex-specific age distributions from each trial. The age distributions have been summarised using truncated normal distributions. These distributions were used in preference to simple counts to avoid concerns about disclosiveness (eg if only 5 patients were aged &lt;40 in a trial, this could in theory be disclosive). The truncated normal distribution was found to describe the distribution well for all of the trials. A truncated normal distribution was chosen over a normal distribution to reflect the fact that many trials impose age cut-offs for trial participation. For each index condition, the overall trial age-sex distribution will be estimated by taking the mean proportion in each category across the trials, in proportion to the number of participants in each trial with that index condition.
+The trial-specific strata will be obtained from summary statistics for
+the sex-specific age distributions from each trial. The age
+distributions have been summarised using truncated normal distributions.
+These distributions were used in preference to simple counts to avoid
+concerns about disclosiveness (eg if only 5 patients were aged \<40 in a
+trial, this could in theory be disclosive). The truncated normal
+distribution was found to describe the distribution well for all of the
+trials. A truncated normal distribution was chosen over a normal
+distribution to reflect the fact that many trials impose age cut-offs
+for trial participation. For each index condition, the overall trial
+age-sex distribution will be estimated by taking the mean proportion in
+each category across the trials, in proportion to the number of
+participants in each trial with that index condition.
 
-Modelling uncertainty in count distributions
---------------------------------------------
+## Modelling uncertainty in count distributions
 
-As the numbers were expected to be large, we had not originally planned to estimate confidence intervals. However, we subsequently decided to do so as some conditions (such as pulmonary hypertension), were found to be uncommon in the primary care data. We therefore developed the following plan to estimate the uncertainty in the differences between primary care and trial comorbidity counts. This analysis was specified prior to examining (including examining graphically) the difference between primary care and trial comorbidity counts. The changes to this analysis plan made *after* comparing the trial and primary care data counts, were in the approach used to summarise the proportion of participants with each count across trials. We had originally planned to use a simple summation weighting by the trial size or within-trial variance, but opted instead to model the uncertainty in a multinomial logit model. Howver, there wer difficulties with fitting this model and we therefore opted to use a model with a Poisson likelihood and a log-link.
+As the numbers were expected to be large, we had not originally planned
+to estimate confidence intervals. However, we subsequently decided to do
+so as some conditions (such as pulmonary hypertension), were found to be
+uncommon in the primary care data. We therefore developed the following
+plan to estimate the uncertainty in the differences between primary care
+and trial comorbidity counts. This analysis was specified prior to
+examining (including examining graphically) the difference between
+primary care and trial comorbidity counts. The changes to this analysis
+plan made *after* comparing the trial and primary care data counts, were
+in the approach used to summarise the proportion of participants with
+each count across trials. We had originally planned to use a simple
+summation weighting by the trial size or within-trial variance, but
+opted instead to model the uncertainty in a multinomial logit model.
+Howver, there wer difficulties with fitting this model and we therefore
+opted to use a model with a Poisson likelihood and a log-link.
 
--   We will model the uncertainty in the primary care data using a Bayesian approach, with a multinomial likelihood, sampling from a Dirichlet distribution as this is a conjugate prior, with a value of 1/K for each parameter in the prior distribution (where K is the number of categories). We will obtain 1,000 samples from the distribution for each age-sex stratum, performing the standardisation with each sample as described above. For this analysis we collapsed patients with 12 or more comorbidities into a single group, giving 13 discrete categories for comorbidity count.
+  - We will model the uncertainty in the primary care data using a
+    Bayesian approach, with a multinomial likelihood, sampling from a
+    Dirichlet distribution as this is a conjugate prior, with a value of
+    1/K for each parameter in the prior distribution (where K is the
+    number of categories). We will obtain 1,000 samples from the
+    distribution for each age-sex stratum, performing the
+    standardisation with each sample as described above. For this
+    analysis we collapsed patients with 12 or more comorbidities into a
+    single group, giving 13 discrete categories for comorbidity count.
 
--   For estimating the uncertainty for the distribution of comorbidity counts for each trial, we will use the same approach as for the primary care data. Where there is more than one index condition for a single trial we will estimate the mean proportion of participants with each comorbidity count using a multimonial likelihood and logit link in a hierarchical (random effects model). Each of the 13 categories (counts 0 to 12) will have a vague independent normal prior, with a mean of 0 and precision of 0.001. For the between trial variance we used a slightly more informative prior, reflecting our prior belief that very extreme differences in the proportion of participants with the same comorbidity count (for a count of 3, say, 0.1% versus 99% for two trials) are implausible. We used a half normal prior with a mean of 0, and precision of 0.10. This latter prior approximately corresponds to there being a 50% probability that the between-trial standard-deviation in log-odds is &gt;2. With a a standard deviation of 2 there weould be a log-odds ratio of 13.5 between trials with a proportions on the 10th and 90th centiles. These priors were developed and tested on simulated data. The multinomial logit model will be run in the JAGS statistical package, and the Dirichlet sampling will be performed in R using the MCMCpack package.
+  - For estimating the uncertainty for the distribution of comorbidity
+    counts for each trial, we will use the same approach as for the
+    primary care data. Where there is more than one index condition for
+    a single trial we will estimate the mean proportion of participants
+    with each comorbidity count using a multimonial likelihood and logit
+    link in a hierarchical (random effects model). Each of the 13
+    categories (counts 0 to 12) will have a vague independent normal
+    prior, with a mean of 0 and precision of 0.001. For the between
+    trial variance we used a slightly more informative prior, reflecting
+    our prior belief that very extreme differences in the proportion of
+    participants with the same comorbidity count (for a count of 3, say,
+    0.1% versus 99% for two trials) are implausible. We used a half
+    normal prior with a mean of 0, and precision of 0.10. This latter
+    prior approximately corresponds to there being a 50% probability
+    that the between-trial standard-deviation in log-odds is \>2. With a
+    a standard deviation of 2 there weould be a log-odds ratio of 13.5
+    between trials with a proportions on the 10th and 90th centiles.
+    These priors were developed and tested on simulated data. The
+    multinomial logit model will be run in the JAGS statistical package,
+    and the Dirichlet sampling will be performed in R using the MCMCpack
+    package.
 
-Update. There was a considerable amount of autocorrelation for the multinomial logistic regression models, even with thinning, and it was not clear that they had converged even after a large number of samples. They were also slow to run. Moreover, on plotting the trial comorbidity counts, we noted that they were very closely approximated by Poisson distributions (these plots will be included as an appendix in the final results along with the aggregated data and models). Therefore, we fitted a model with a Poisson distribution and a log-link. The JAGS code for this model is shown below.
+Update. There was a considerable amount of autocorrelation for the
+multinomial logistic regression models, even with thinning, and it was
+not clear that they had converged even after a large number of samples.
+They were also slow to run. Moreover, on plotting the trial comorbidity
+counts, we noted that they were very closely approximated by Poisson
+distributions (these plots will be included as an appendix in the final
+results along with the aggregated data and models). Therefore, we fitted
+a model with a Poisson distribution and a log-link. The JAGS code for
+this model is shown below.
 
     model{
       for(i in 1:i_max){
@@ -282,57 +618,406 @@ Update. There was a considerable amount of autocorrelation for the multinomial l
         sd_trial ~ dnorm(0, 1)T(0,)
     } # End of model
 
-i indicates each condition and j each trial. We incldued a parameter for the expectation for each trial (intercept\[i,j\]), summarised via a higher-level parameter for each condition (mu\_trial\[i\]). This meant the model is similar to a "random effects" meta-analysis. The condition-level expectation was estimated separately for each condition. However, as some conditions had few trials (sometimes only two trials), and it is known to be difficult to estimate between-trial variances in meta-analyses, we opted to model a single between-trial variance, within each condition, for all conditions. On subsequently inspecting the variances for those conditions with multiple trials, this assumption seemed reasonable. For each of 1,000 samples from the posterior, we exponentiated the condition-level expectation (mu\_trial) to obtain the rate parameter for a Poisson probability density function (`dpois in R`) which we used to estimate the proportion of participants with comorbidity count from 0 to 12.
+i indicates each condition and j each trial. We incldued a parameter for
+the expectation for each trial (intercept\[i,j\]), summarised via a
+higher-level parameter for each condition (mu\_trial\[i\]). This meant
+the model is similar to a “random effects” meta-analysis. The
+condition-level expectation was estimated separately for each condition.
+However, as some conditions had few trials (sometimes only two trials),
+and it is known to be difficult to estimate between-trial variances in
+meta-analyses, we opted to model a single between-trial variance, within
+each condition, for all conditions. On subsequently inspecting the
+variances for those conditions with multiple trials, this assumption
+seemed reasonable. For each of 1,000 samples from the posterior, we
+exponentiated the condition-level expectation (mu\_trial) to obtain the
+rate parameter for a Poisson probability density function (`dpois in R`)
+which we used to estimate the proportion of participants with
+comorbidity count from 0 to 12.
 
-By modelling the expectation, rather than each proportion, we were able to greatly simiplify the modelling. It meant that we could summarise the distribution of counts for each trial using a single integer (the total comorbidity count) along with an offset for the number of participants, and the models appeared to converge quickly with no evidence of autocorrelation.
+By modelling the expectation, rather than each proportion, we were able
+to greatly simiplify the modelling. It meant that we could summarise the
+distribution of counts for each trial using a single integer (the total
+comorbidity count) along with an offset for the number of participants,
+and the models appeared to converge quickly with no evidence of
+autocorrelation.
 
-We compared the estimates from this Poisson model to the original multinomial logistic regression model (which showed considerable autocorrelation). Both models yielded similar point estimates, but the credible intervals for the Poisson model were wider, and hence we opted to use this for all subsequent analyses.
+We compared the estimates from this Poisson model to the original
+multinomial logistic regression model (which showed considerable
+autocorrelation). Both models yielded similar point estimates, but the
+credible intervals for the Poisson model were wider, and hence we opted
+to use this for all subsequent analyses.
 
-For conditions with only a single trial, we used a Dirichlet prior, for consistency with the primary care data analysis. However, we will note that the estimated uncertainty relates to that single trial, not the the population of trials of which the observed trials are an example (as per the conditions with more than one trial).
+For conditions with only a single trial, we used a Dirichlet prior, for
+consistency with the primary care data analysis. However, we will note
+that the estimated uncertainty relates to that single trial, not the the
+population of trials of which the observed trials are an example (as per
+the conditions with more than one trial).
 
-We will compare the comorbidity counts between primary care and trials for each index condition as follows:-
+We will compare the comorbidity counts between primary care and trials
+for each index condition as follows:-
 
-1.  We will plot the distribution of counts (standardised by age and sex) for the overall trial estimate versus the primary care populations. We will provide point estimates in the main manuscript. This will be the main and most important comparison. In the appendix, we will also plot 5-10 random samples (from the posterior distributions) to a provide a graphical representation of the uncertainty across the distribution of comorbidity counts does not depend on any particiular choice of summary statistic (eg the mean count). In the appendix, we will also present similar comparisons between primary care and each trial separately.
+1.  We will plot the distribution of counts (standardised by age and
+    sex) for the overall trial estimate versus the primary care
+    populations. We will provide point estimates in the main manuscript.
+    This will be the main and most important comparison. In the
+    appendix, we will also plot 5-10 random samples (from the posterior
+    distributions) to a provide a graphical representation of the
+    uncertainty across the distribution of comorbidity counts does not
+    depend on any particiular choice of summary statistic (eg the mean
+    count). In the appendix, we will also present similar comparisons
+    between primary care and each trial separately.
 
-2.  We will summarise the difference in the distribution in count for primary care and the overall trial estimates using a number of summary statsitics. First we will compare the mean count for both populations (on the ratio scale). In additional analyses we will compare the proportion with 2 or more comorbidities (in addition to the index disease). Finally, we will report the proportion of primary care patients with a comorbidity count &gt;= the median comorbidity count for the overall trial estimate. Uncertainty intervals will be obtained by calculating these statistics using 1,000 samples from each distribution, and presenting the values for the 2.5th and 97.5th percentiles. We chose 2 or more comorbidities to attempt to identify a high-comorbidity group.
+2.  We will summarise the difference in the distribution in count for
+    primary care and the overall trial estimates using a number of
+    summary statsitics. First we will compare the mean count for both
+    populations (on the ratio scale). In additional analyses we will
+    compare the proportion with 2 or more comorbidities (in addition to
+    the index disease). Finally, we will report the proportion of
+    primary care patients with a comorbidity count \>= the median
+    comorbidity count for the overall trial estimate. Uncertainty
+    intervals will be obtained by calculating these statistics using
+    1,000 samples from each distribution, and presenting the values for
+    the 2.5th and 97.5th percentiles. We chose 2 or more comorbidities
+    to attempt to identify a high-comorbidity group.
 
-We chose to use standardisation because the individual level data, and hence age-sex specific comorbidity counts, are held in separate data "safe havens" (two for the trial data and a further safe haven with the primary care data) which would have made it difficult to fit a single model. We used a simulation-based approach as this would then allow us to propagate the uncertainty from the comorbidity counts, from both the primary care and trial data, through the standardisation calculations. This informed the choice to sample from Dirichlet distributions for the primary care data and individual trials, and to fit a Bayesian model using MCMC to estimate the overall trial comorbidity distribution (for each index condition).
+We chose to use standardisation because the individual level data, and
+hence age-sex specific comorbidity counts, are held in separate data
+“safe havens” (two for the trial data and a further safe haven with
+the primary care data) which would have made it difficult to fit a
+single model. We used a simulation-based approach as this would then
+allow us to propagate the uncertainty from the comorbidity counts, from
+both the primary care and trial data, through the standardisation
+calculations. This informed the choice to sample from Dirichlet
+distributions for the primary care data and individual trials, and to
+fit a Bayesian model using MCMC to estimate the overall trial
+comorbidity distribution (for each index condition).
 
-References
-==========
+## Statistical analysis as completed
 
-1.  Huber CA, Szucs TD, Rapold R, Reich O. Identifying patients with chronic conditions using pharmacy data in Switzerland: an updated mapping approach to the classification of medications. BMC Public Health. 2013 Oct 30;13:1030.
+The following described the statistical analysis, as completed, in
+greater detail than was provided in the main manuscript.
 
-2.  Stuntz M, Bernstein B. Recent trends in the prevalence of low-dose aspirin use for primary and secondary prevention of cardiovascular disease in the United States, 2012–2015. Prev Med Rep. 2016 Dec 28;5:183–6.
+We compared comorbidity counts in the SAIL and trial datasets having
+standardised the SAIL data to the number of trial participants with each
+indication in each age and sex band.
 
-3.  WHO Collaborating Centre for Drug Statistics Methodology. ATC classification index with DDDs. 2015.
+We chose to use standardisation because the individual level data, and
+hence age-sex specific comorbidity counts, are held in separate data
+“safe havens” (two for the trial data and a further safe haven with
+the primary care data) which would have made it difficult to fit a
+single model. We then used a simulation-based approach to model the
+uncertainty as this allowed us to propagate the uncertainty from the
+comorbidity counts, from both the primary care and trial data, through
+the standardisation calculations. This informed the choice to sample
+from Dirichlet distributions for the primary care data and individual
+trials, and to fit a Bayesian model using Markov Chain Monte Carlo
+(MCMC) to estimate the overall trial comorbidity distribution (for each
+index condition).
 
-4.  Radley DC, Finkelstein SN, Stafford RS. Off-label prescribing among office-based physicians. Arch Intern Med. 2006 May 8;166(9):1021–6.
+Briefly, for each indication, we applied the proportions with each
+comorbidity count for each age and sex specific stratum to the age and
+sex distribution in the trial data to obtain the expected comorbidity
+counts for each stratum, then summed this across strata. This is
+essentially direct standardisation (albeit with proportion rather than
+rate data as is more common).
 
-5.  Wong J, Motulsky A, Abrahamowicz M, Eguale T, Buckeridge DL, Tamblyn R. Off-label indications for antidepressants in primary care: descriptive study of prescriptions from an indication based electronic prescribing system. BMJ. 2017 Feb 21;356:j603.
+The trial-specific strata were obtained from summary statistics for the
+sex-specific age distributions from each trial. The age distributions
+were summarised using truncated normal distributions. These
+distributions were used in preference to simple counts to avoid concerns
+about disclosiveness (eg if only 5 patients were aged \<40 in a trial,
+this could in theory be disclosive). The truncated normal distribution
+was found to describe the distribution well for all of the trials (the
+plots, which could also arguably be disclosive, are held on the secure
+trial platforms). A truncated normal distribution was chosen over a
+normal distribution to reflect the fact that many trials impose age
+cut-offs for trial participation. For each index condition, the overall
+trial age-sex distribution was estimated by taking the mean proportion
+in each category across the trials, in proportion to the number of
+participants in each trial with that index condition.
 
-6.  Age-specific relevance of usual blood pressure to vascular mortality: a meta-analysis of individual data for one million adults in 61 prospective studies. The Lancet. 2002 Dec 14;360(9349):1903–13.
+As the numbers were expected to be large, we had not originally planned
+to estimate confidence intervals. However, we opted to do so as some
+conditions (such as pulmonary hypertension), were found to be uncommon
+in the primary care data. We therefore developed the following plan to
+estimate the uncertainty in the differences between primary care and
+trial comorbidity counts. This analysis was specified prior to examining
+(including examining graphically) the difference between primary care
+and trial comorbidity counts. The changes to this analysis plan made
+*after* comparing the trial and primary care data counts, were in the
+approach used to summarise the proportion of participants with each
+count across trials. We had originally planned to use a simple summation
+weighting by the trial size or within-trial variance, but opted instead
+to model the uncertainty in a multinomial logit model. However, we
+subsequently had difficulties fitting this model and we therefore opted
+to use a model with a Poisson likelihood and a log-link.
 
-7.  Tobin Martin D., Sheehan Nuala A., Scurrah Katrina J., Burton Paul R. Adjusting for treatment effects in studies of quantitative traits: antihypertensive therapy and systolic blood pressure. Stat Med. 2005 Sep 8;24(19):2911–35.
+We modelled the uncertainty in the primary care data using a Bayesian
+approach, with a multinomial likelihood, sampling from a Dirichlet
+distribution as this is a conjugate prior, with a value of 1/K for each
+parameter in the prior distribution (where K is the number of
+categories). We obtained 1,000 samples from the distribution for each
+age-sex stratum, performing the standardisation with each sample as
+described above. For this analysis we collapsed patients with 12 or more
+comorbidities into a single group, giving 13 discrete categories for
+comorbidity count. We did not sample repeatedly from a probability
+distribution for the age-sex distributions within trials, but rather
+treated this as fixed.
 
-8.  Mosteller RD. Simplified calculation of body-surface area. N Engl J Med. 1987 Oct 22;317(17):1098.
+For estimating the uncertainty for the distribution of comorbidity
+counts for each trial, we used the same approach as for the primary care
+data. Where there was more than one index condition for a single trial
+we had intended to estimate the mean proportion of participants with
+each comorbidity count using a multinomial likelihood and logit link in
+a hierarchical (random effects) model. However, there was a considerable
+amount of autocorrelation for these multinomial logistic regression
+models, even with thinning, and it was not clear that they had converged
+even after a large number of samples. They were also slow to run.
 
-9.  Royston P. The use of fractional polynomials to model interactions between treatment and continuous covariates in clinical trials. In: ResearchGate \*I**n**t**e**r**n**e**t* . *c**i**t**e**d*2018*A**p\*\*r\*6 . Available from: [https://www.researchgate.net/publication/4998077\\\_The\\\_use\\\_of\\\_fractional\\\_polynomials\\\_to\\\_model\\\_interactions\\\_between\\\_treatment\\\_and\\\_continuous\\\_covariates\\\_in\\\_clinical\\\_trials](https://www.researchgate.net/publication/4998077_The_use_of_fractional_polynomials_to_model_interactions_between_treatment_and_continuous_covariates_in_clinical_trials)
+Moreover, on plotting the trial comorbidity counts, we noted that they
+were very closely approximated by Poisson distributions. For a random
+sample of 25 trials, the following figure shows the observed count
+distribution of participants with each comorbidity count, as well as the
+expected distribution assuming a Poisson distribution.
 
-10. Yurkovich M, Avina-Zubieta JA, Thomas J, Gorenchtein M, Lacaille D. A systematic review identifies valid comorbidity indices derived from administrative health data. J Clin Epidemiol. 2015 Jan;68(1):3–14.
+![Distribution of comorbidity counts within each
+trial](defining_comorbidities_SAIL_files/figure-gfm/poisdistcount-1.png)
 
-11. Agency for Healthcare Research and Quality. Clinical Classifications Software for ICD-10 Data \*I**n**t**e**r**n**e**t* . 2012 *c**i**t**e**d*2015*D**e\*\*c\*31 . Available from: [http://www.ahrq.gov/research/data/hcup/icd10usrgd.html\\\#elix](http://www.ahrq.gov/research/data/hcup/icd10usrgd.html#elix)
+Therefore, we fitted a model with a Poisson distribution and a log-link.
+The JAGS code for this model is shown
+below.
 
-12. Pollock, Laura J., Reid Tingley, William K. Morris, Nick Golding, Robert B. O’Hara, Kirsten M. Parris, Peter A. Vesk, and Michael A. McCarthy. “Understanding Co-Occurrence by Modelling Species Simultaneously with a Joint Species Distribution Model (JSDM).” Methods in Ecology and Evolution 5, no. 5 (May 1, 2014): 397–406. <https://doi.org/10.1111/2041-210X.12180>.
+## Poisson model, random intercept, single between-trial (within indication) variance
 
-Appendix Diagnostic codes
-=========================
+    model{
+      for(i in 1:i_max){
+        ## Trial level
+        for(j in 1:j_max){
+          ys[i,j] ~ dpois(lambda[i,j])
+          log(lambda[i,j]) <- intercept[i,j] + log(ns[i,j])
+          intercept[i,j] ~ dnorm(mu_trial[i], prec_trial)
+      } # end trial
+      } # end condition
+        ## Prior for intercept at level of condition,  independent for each condition
+        for (i in 1:i_max){
+          mu_trial[i] ~ dnorm(0, 0.1)
+        }
+        ## High-level priors
+        ## Single common prior for between trial variation 
+        prec_trial <- 1/sd_trial^2
+        sd_trial ~ dnorm(0, 1)T(0,)
+    } # End of model
 
-Table A1 Read codes for index diagnoses
----------------------------------------
+i indicates each condition and j each trial. We included a parameter for
+the expectation for each trial (intercept\[i,j\]), summarised via a
+higher-level parameter for each condition (mu\_trial\[i\]). This meant
+the model is similar to a “random effects” meta-analysis. The
+condition-level expectation was estimated separately for each condition.
+However, as some conditions had few trials (sometimes only two trials),
+and it is known to be difficult to estimate between-trial variances in
+meta-analyses, we opted to model a single between-trial variance, within
+each condition, for all conditions. For each of 1,000 samples from the
+posterior, we exponentiated the condition-level expectation (mu\_trial)
+to obtain the rate parameter for a Poisson probability density function
+(`dpois in R`) which we used to estimate the proportion of participants
+with comorbidity counts from 0 to 12.
+
+By modelling the expectation, rather than each proportion, we were able
+to greatly simplify the modelling. It meant that we could summarise the
+distribution of counts for each trial using a single integer (the total
+comorbidity count) along with an offset for the number of participants,
+and the models appeared to converge quickly with no evidence of
+autocorrelation.
+
+For conditions with only a single trial, we used a Dirichlet prior, for
+consistency with the primary care data analysis. It is important to note
+that the uncertainty intervals for single condition diseases relates to
+that single trial, unlike the other indications for which some estimate
+of the between-trial uncertainty is included.
+
+We compared the comorbidity counts between primary care and trials for
+each index condition as follows:-
+
+1.  We plotted the distribution of counts (standardised by age and sex)
+    for the overall trial estimate versus the primary care populations.
+    This is the main and most important comparison.
+
+2.  We summarised the difference in the distribution in count for
+    primary care and the overall trial estimates using a number of
+    summary statistics. First we compared the mean count for both
+    populations (on the ratio scale). In additional analyses we compared
+    the proportion with 2 or more comorbidities (in addition to the
+    index disease). Finally, we reported the proportion of primary care
+    patients with a comorbidity count \>= the median comorbidity count
+    for the overall trial estimate. Uncertainty intervals were obtained
+    by calculating these statistics using 1,000 samples from each
+    distribution, and presenting the values for the 2.5th and 97.5th
+    percentiles. We chose 2 or more comorbidities to attempt to identify
+    a high-comorbidity group.
+
+In sensitivity analyses, we compared the estimates from the Poisson
+model used in the main analysis to the original multinomial logistic
+regression model (which showed considerable autocorrelation). Both
+models yielded similar point estimates, but the credible intervals for
+the Poisson model were wider, and hence we opted to use this for all
+subsequent analyses. We also fit fixed-effect models, assuming that all
+trials had the same underlying mean comorbidity count. We also fit
+models allowing the within-trial variation to vary between trials (but
+with a common prior). The indication-level mean comorbidity count, for
+indications with more than one trial, are shown in the figure below.
+
+![Mean comorbidity
+count](defining_comorbidities_SAIL_files/figure-gfm/mdlcmpr-1.png)
+
+The code for each model shown in the figure above follows.
+
+## Multinomial logit
+
+    model{
+    for(i in 1:ns){
+      r[i, 1:Categories] ~ dmulti(prob[i, 1:Categories], n[i])
+      # Set phi (which is not the same as prob, for the first category, to zero)
+      phi[i,1] <- 1
+      prob[i,1] <- 1 / sum(phi[i, 1:Categories])
+      for(c in 2:Categories){
+        log(phi[i,c]) <- intercept[i, c]
+        prob[i,c] <- phi[i,c] / sum(phi[i, 1:Categories])
+      } # end categories
+    
+      ## Set priors and contraint at trial-level
+      ## Set intercept for category one to zero
+      intercept[i,1] <- 0
+      ## st vague prior on other categories
+      for(c in 2:Categories){
+        intercept[i,c] ~ dnorm(mu[c], prec)
+      }
+    
+    } # end studies
+    
+    
+      ## Global priors
+        mu[1] <- 0
+      for(c in 2:Categories){
+        mu[c] ~ dnorm(0, 0.001)
+      }
+      ## common variance in odds ratio across all categories
+        prec <- 1/sd^2
+        sd ~ dnorm(0, 0.1)T(0,)
+    
+     ## Transform mu to estimate proportions for random effect across trials
+        for(c in 1:Categories){
+        log(phi_new[c]) <- mu[c]
+        prob_new[c] <- phi_new[c] / sum(phi_new[1:Categories])
+      } # end categories
+    
+    }
+    "
+
+## Poisson model, fixed effect
+
+    model{
+      for(i in 1:i_max){
+        ## Trial level
+        for(j in 1:j_max){
+          ys[i,j] ~ dpois(lambda[i,j])
+          log(lambda[i,j]) <- intercept[i] + log(ns[i,j])
+      } # end trial
+      } # end condition
+        ## Prior for intercept at level of condition, note that these are independent for each condition
+        for (i in 1:i_max){
+          intercept[i] ~ dnorm(0, 0.1)
+        }
+    } # End of model
+
+## Poisson model, allow between-trial variance to vary between indications
+
+    model{
+      for(i in 1:i_max){
+        ## Trial level
+        for(j in 1:j_max){
+          ys[i,j] ~ dpois(lambda[i,j])
+          log(lambda[i,j]) <- intercept[i,j] + log(ns[i,j])
+          intercept[i,j] ~ dnorm(mu_trial[i], prec_trial[i])
+      } # end trial
+      } # end condition
+        ## Prior for intercept at level of condition, note that these are independent for each condition
+        for (i in 1:i_max){
+          mu_trial[i] ~ dnorm(0, 0.1)
+        ## Precision in each trial
+          prec_trial[i] <- 1/sd_trial[i]^2
+          sd_trial[i] ~ dnorm(sd_trial_mu, sd_trial_prec)T(0,)
+        }
+        ## Hyperprior for between-trial precision
+        sd_trial_mu ~ dnorm(0, 1)T(0,)
+        sd_trial_prec <- 1/sd_trial_sd^2
+        sd_trial_sd ~ dnorm(0, 1)T(0,)
+    } # End of model
+
+# References
+
+1.  Huber CA, Szucs TD, Rapold R, Reich O. Identifying patients with
+    chronic conditions using pharmacy data in Switzerland: an updated
+    mapping approach to the classification of medications. BMC Public
+    Health. 2013 Oct 30;13:1030.
+
+2.  Stuntz M, Bernstein B. Recent trends in the prevalence of low-dose
+    aspirin use for primary and secondary prevention of cardiovascular
+    disease in the United States, 2012–2015. Prev Med Rep. 2016 Dec
+    28;5:183–6.
+
+3.  WHO Collaborating Centre for Drug Statistics Methodology. ATC
+    classification index with DDDs. 2015.
+
+4.  Radley DC, Finkelstein SN, Stafford RS. Off-label prescribing among
+    office-based physicians. Arch Intern Med. 2006 May 8;166(9):1021–6.
+
+5.  Wong J, Motulsky A, Abrahamowicz M, Eguale T, Buckeridge DL, Tamblyn
+    R. Off-label indications for antidepressants in primary care:
+    descriptive study of prescriptions from an indication based
+    electronic prescribing system. BMJ. 2017 Feb 21;356:j603.
+
+6.  Age-specific relevance of usual blood pressure to vascular
+    mortality: a meta-analysis of individual data for one million adults
+    in 61 prospective studies. The Lancet. 2002 Dec
+    14;360(9349):1903–13.
+
+7.  Tobin Martin D., Sheehan Nuala A., Scurrah Katrina J., Burton Paul
+    R. Adjusting for treatment effects in studies of quantitative
+    traits: antihypertensive therapy and systolic blood pressure. Stat
+    Med. 2005 Sep 8;24(19):2911–35.
+
+8.  Mosteller RD. Simplified calculation of body-surface area. N Engl J
+    Med. 1987 Oct 22;317(17):1098.
+
+9.  Royston P. The use of fractional polynomials to model interactions
+    between treatment and continuous covariates in clinical trials. In:
+    ResearchGate \*I**n**t**e**r**n**e**t* .
+    *c**i**t**e**d*2018*A**p\*\*r\*6 . Available from:
+    [https://www.researchgate.net/publication/4998077\\\_The\\\_use\\\_of\\\_fractional\\\_polynomials\\\_to\\\_model\\\_interactions\\\_between\\\_treatment\\\_and\\\_continuous\\\_covariates\\\_in\\\_clinical\\\_trials](https://www.researchgate.net/publication/4998077_The_use_of_fractional_polynomials_to_model_interactions_between_treatment_and_continuous_covariates_in_clinical_trials)
+
+10. Yurkovich M, Avina-Zubieta JA, Thomas J, Gorenchtein M, Lacaille D.
+    A systematic review identifies valid comorbidity indices derived
+    from administrative health data. J Clin Epidemiol. 2015
+    Jan;68(1):3–14.
+
+11. Agency for Healthcare Research and Quality. Clinical Classifications
+    Software for ICD-10 Data \*I**n**t**e**r**n**e**t* . 2012
+    *c**i**t**e**d*2015*D**e\*\*c\*31 . Available from:
+    [http://www.ahrq.gov/research/data/hcup/icd10usrgd.html\\\#elix](http://www.ahrq.gov/research/data/hcup/icd10usrgd.html#elix)
+
+12. Pollock, Laura J., Reid Tingley, William K. Morris, Nick Golding,
+    Robert B. O’Hara, Kirsten M. Parris, Peter A. Vesk, and Michael A.
+    McCarthy. “Understanding Co-Occurrence by Modelling Species
+    Simultaneously with a Joint Species Distribution Model (JSDM).”
+    Methods in Ecology and Evolution 5, no. 5 (May 1, 2014): 397–406.
+    <https://doi.org/10.1111/2041-210X.12180>.
+
+# Appendix Diagnostic codes
+
+## Table A1 Read codes for index diagnoses
 
 | Read code | Description                                                                                                           | Condition                                 |
-|:----------|:----------------------------------------------------------------------------------------------------------------------|:------------------------------------------|
+| :-------- | :-------------------------------------------------------------------------------------------------------------------- | :---------------------------------------- |
 | 66h..     | Dementia monitoring                                                                                                   | Dementia (any)                            |
 | 6AB..     | Dementia annual review                                                                                                | Dementia (any)                            |
 | E000.     | Uncomplicated senile dementia                                                                                         | Dementia (any)                            |
@@ -356,11 +1041,11 @@ Table A1 Read codes for index diagnoses
 | E012.     | Other alcoholic dementia                                                                                              | Dementia (any)                            |
 | E02y1     | Drug-induced dementia                                                                                                 | Dementia (any)                            |
 | E041.     | Dementia in conditions EC                                                                                             | Dementia (any)                            |
-| Eu00.     | \[X\]Dementia in Alzheimer's disease                                                                                  | Dementia (any)                            |
-| Eu000     | \[X\]Dementia in Alzheimer's disease with early onset                                                                 | Dementia (any)                            |
-| Eu001     | \[X\]Dementia in Alzheimer's disease with late onset                                                                  | Dementia (any)                            |
-| Eu002     | \[X\]Dementia in Alzheimer's dis, atypical or mixed type                                                              | Dementia (any)                            |
-| Eu00z     | \[X\]Dementia in Alzheimer's disease, unspecified                                                                     | Dementia (any)                            |
+| Eu00.     | \[X\]Dementia in Alzheimer’s disease                                                                                  | Dementia (any)                            |
+| Eu000     | \[X\]Dementia in Alzheimer’s disease with early onset                                                                 | Dementia (any)                            |
+| Eu001     | \[X\]Dementia in Alzheimer’s disease with late onset                                                                  | Dementia (any)                            |
+| Eu002     | \[X\]Dementia in Alzheimer’s dis, atypical or mixed type                                                              | Dementia (any)                            |
+| Eu00z     | \[X\]Dementia in Alzheimer’s disease, unspecified                                                                     | Dementia (any)                            |
 | Eu01.     | \[X\]Vascular dementia                                                                                                | Dementia (any)                            |
 | Eu010     | \[X\]Vascular dementia of acute onset                                                                                 | Dementia (any)                            |
 | Eu011     | \[X\]Multi-infarct dementia                                                                                           | Dementia (any)                            |
@@ -369,31 +1054,31 @@ Table A1 Read codes for index diagnoses
 | Eu01y     | \[X\]Other vascular dementia                                                                                          | Dementia (any)                            |
 | Eu01z     | \[X\]Vascular dementia, unspecified                                                                                   | Dementia (any)                            |
 | Eu02.     | \[X\]Dementia in other diseases classified elsewhere                                                                  | Dementia (any)                            |
-| Eu020     | \[X\]Dementia in Pick's disease                                                                                       | Dementia (any)                            |
+| Eu020     | \[X\]Dementia in Pick’s disease                                                                                       | Dementia (any)                            |
 | Eu021     | \[X\]Dementia in Creutzfeldt-Jakob disease                                                                            | Dementia (any)                            |
-| Eu022     | \[X\]Dementia in Huntington's disease                                                                                 | Dementia (any)                            |
-| Eu023     | \[X\]Dementia in Parkinson's disease                                                                                  | Dementia (any)                            |
+| Eu022     | \[X\]Dementia in Huntington’s disease                                                                                 | Dementia (any)                            |
+| Eu023     | \[X\]Dementia in Parkinson’s disease                                                                                  | Dementia (any)                            |
 | Eu024     | \[X\]Dementia in human immunodef virus \[HIV\] disease                                                                | Dementia (any)                            |
 | Eu025     | \[X\]Lewy body dementia                                                                                               | Dementia (any)                            |
 | Eu02y     | \[X\]Dementia in other specified diseases classif elsewhere                                                           | Dementia (any)                            |
 | Eu02z     | \[X\] Unspecified dementia                                                                                            | Dementia (any)                            |
 | Eu041     | \[X\]Delirium superimposed on dementia                                                                                | Dementia (any)                            |
-| F110.     | Alzheimer's disease                                                                                                   | Dementia (any)                            |
-| F1100     | Alzheimer's disease with early onset                                                                                  | Dementia (any)                            |
-| F1101     | Alzheimer's disease with late onset                                                                                   | Dementia (any)                            |
-| F111.     | Pick's disease                                                                                                        | Dementia (any)                            |
+| F110.     | Alzheimer’s disease                                                                                                   | Dementia (any)                            |
+| F1100     | Alzheimer’s disease with early onset                                                                                  | Dementia (any)                            |
+| F1101     | Alzheimer’s disease with late onset                                                                                   | Dementia (any)                            |
+| F111.     | Pick’s disease                                                                                                        | Dementia (any)                            |
 | F112.     | Senile degeneration of brain                                                                                          | Dementia (any)                            |
 | F116.     | Lewy body disease                                                                                                     | Dementia (any)                            |
-| Fyu30     | \[X\]Other Alzheimer's disease                                                                                        | Dementia (any)                            |
-| Eu00.     | \[X\]Dementia in Alzheimer's disease                                                                                  | Alzheimer's Disease                       |
-| Eu000     | \[X\]Dementia in Alzheimer's disease with early onset                                                                 | Alzheimer's Disease                       |
-| Eu001     | \[X\]Dementia in Alzheimer's disease with late onset                                                                  | Alzheimer's Disease                       |
-| Eu002     | \[X\]Dementia in Alzheimer's dis, atypical or mixed type                                                              | Alzheimer's Disease                       |
-| Eu00z     | \[X\]Dementia in Alzheimer's disease, unspecified                                                                     | Alzheimer's Disease                       |
-| F110.     | Alzheimer's disease                                                                                                   | Alzheimer's Disease                       |
-| F1100     | Alzheimer's disease with early onset                                                                                  | Alzheimer's Disease                       |
-| F1101     | Alzheimer's disease with late onset                                                                                   | Alzheimer's Disease                       |
-| Fyu30     | \[X\]Other Alzheimer's disease                                                                                        | Alzheimer's Disease                       |
+| Fyu30     | \[X\]Other Alzheimer’s disease                                                                                        | Dementia (any)                            |
+| Eu00.     | \[X\]Dementia in Alzheimer’s disease                                                                                  | Alzheimer’s Disease                       |
+| Eu000     | \[X\]Dementia in Alzheimer’s disease with early onset                                                                 | Alzheimer’s Disease                       |
+| Eu001     | \[X\]Dementia in Alzheimer’s disease with late onset                                                                  | Alzheimer’s Disease                       |
+| Eu002     | \[X\]Dementia in Alzheimer’s dis, atypical or mixed type                                                              | Alzheimer’s Disease                       |
+| Eu00z     | \[X\]Dementia in Alzheimer’s disease, unspecified                                                                     | Alzheimer’s Disease                       |
+| F110.     | Alzheimer’s disease                                                                                                   | Alzheimer’s Disease                       |
+| F1100     | Alzheimer’s disease with early onset                                                                                  | Alzheimer’s Disease                       |
+| F1101     | Alzheimer’s disease with late onset                                                                                   | Alzheimer’s Disease                       |
+| Fyu30     | \[X\]Other Alzheimer’s disease                                                                                        | Alzheimer’s Disease                       |
 | 173A.     | Exercise induced asthma                                                                                               | Asthma                                    |
 | 173c.     | Occupational asthma                                                                                                   | Asthma                                    |
 | 173d.     | Work aggravated asthma                                                                                                | Asthma                                    |
@@ -625,7 +1310,7 @@ Table A1 Read codes for index diagnoses
 | F2556     | Simple partial epileptic seizure                                                                                      | Epilepsy                                  |
 | F255y     | Partial epilepsy without impairment of consciousness OS                                                               | Epilepsy                                  |
 | F255z     | Partial epilepsy without impairment of consciousness NOS                                                              | Epilepsy                                  |
-| F257.     | Kojevnikov's epilepsy                                                                                                 | Epilepsy                                  |
+| F257.     | Kojevnikov’s epilepsy                                                                                                 | Epilepsy                                  |
 | F258.     | Post-ictal state                                                                                                      | Epilepsy                                  |
 | F259.     | Early infant epileptic encephalopathy wth suppression bursts                                                          | Epilepsy                                  |
 | F25A.     | Juvenile myoclonic epilepsy                                                                                           | Epilepsy                                  |
@@ -638,7 +1323,7 @@ Table A1 Read codes for index diagnoses
 | F25y.     | Other forms of epilepsy                                                                                               | Epilepsy                                  |
 | F25y0     | Cursive (running) epilepsy                                                                                            | Epilepsy                                  |
 | F25y1     | Gelastic epilepsy                                                                                                     | Epilepsy                                  |
-| F25y2     | Locl-rlt(foc)(part)idiop epilep&epilptic syn seiz locl onset                                                          | Epilepsy                                  |
+| F25y2     | Locl-rlt(foc)(part)idiop epilep\&epilptic syn seiz locl onset                                                         | Epilepsy                                  |
 | F25y3     | Complex partial status epilepticus                                                                                    | Epilepsy                                  |
 | F25y4     | Benign Rolandic epilepsy                                                                                              | Epilepsy                                  |
 | F25y5     | Panayiotopoulos syndrome                                                                                              | Epilepsy                                  |
@@ -679,7 +1364,7 @@ Table A1 Read codes for index diagnoses
 | F4042     | Blind hypertensive eye                                                                                                | Hypertension                              |
 | F4213     | Hypertensive retinopathy                                                                                              | Hypertension                              |
 | F4504     | Ocular hypertension                                                                                                   | Hypertension                              |
-| G2...     | Hypertensive disease                                                                                                  | Hypertension                              |
+| G2…       | Hypertensive disease                                                                                                  | Hypertension                              |
 | G20..     | Essential hypertension                                                                                                | Hypertension                              |
 | G200.     | Malignant essential hypertension                                                                                      | Hypertension                              |
 | G201.     | Benign essential hypertension                                                                                         | Hypertension                              |
@@ -707,9 +1392,9 @@ Table A1 Read codes for index diagnoses
 | G23..     | Hypertensive heart and renal disease                                                                                  | Hypertension                              |
 | G230.     | Malignant hypertensive heart and renal disease                                                                        | Hypertension                              |
 | G231.     | Benign hypertensive heart and renal disease                                                                           | Hypertension                              |
-| G232.     | Hypertensive heart&renal dis wth (congestive) heart failure                                                           | Hypertension                              |
+| G232.     | Hypertensive heart\&renal dis wth (congestive) heart failure                                                          | Hypertension                              |
 | G233.     | Hypertensive heart and renal disease with renal failure                                                               | Hypertension                              |
-| G234.     | Hyperten heart&renal dis+both(congestv)heart and renal fail                                                           | Hypertension                              |
+| G234.     | Hyperten heart\&renal dis+both(congestv)heart and renal fail                                                          | Hypertension                              |
 | G23z.     | Hypertensive heart and renal disease NOS                                                                              | Hypertension                              |
 | G24..     | Secondary hypertension                                                                                                | Hypertension                              |
 | G240.     | Secondary malignant hypertension                                                                                      | Hypertension                              |
@@ -733,21 +1418,21 @@ Table A1 Read codes for index diagnoses
 | X2036     | Sporadic primary pulmonary hypertension                                                                               | Hypertension, Pulmonary                   |
 | X2037     | Familial primary pulmonary hypertension                                                                               | Hypertension, Pulmonary                   |
 | 14C4.     | H/O: colitis                                                                                                          | Inflammatory bowel disease                |
-| J08z9     | Orofacial Crohn's disease                                                                                             | Inflammatory bowel disease                |
-| J40..     | Regional enteritis - Crohn's disease                                                                                  | Inflammatory bowel disease                |
+| J08z9     | Orofacial Crohn’s disease                                                                                             | Inflammatory bowel disease                |
+| J40..     | Regional enteritis - Crohn’s disease                                                                                  | Inflammatory bowel disease                |
 | J400.     | Regional enteritis of the small bowel                                                                                 | Inflammatory bowel disease                |
 | J4000     | Regional enteritis of the duodenum                                                                                    | Inflammatory bowel disease                |
 | J4001     | Regional enteritis of the jejunum                                                                                     | Inflammatory bowel disease                |
-| J4002     | Crohn's disease of the terminal ileum                                                                                 | Inflammatory bowel disease                |
-| J4003     | Crohn's disease of the ileum unspecified                                                                              | Inflammatory bowel disease                |
-| J4004     | Crohn's disease of the ileum NOS                                                                                      | Inflammatory bowel disease                |
-| J4005     | Exacerbation of Crohn's disease of small intestine                                                                    | Inflammatory bowel disease                |
-| J400z     | Crohn's disease of the small bowel NOS                                                                                | Inflammatory bowel disease                |
+| J4002     | Crohn’s disease of the terminal ileum                                                                                 | Inflammatory bowel disease                |
+| J4003     | Crohn’s disease of the ileum unspecified                                                                              | Inflammatory bowel disease                |
+| J4004     | Crohn’s disease of the ileum NOS                                                                                      | Inflammatory bowel disease                |
+| J4005     | Exacerbation of Crohn’s disease of small intestine                                                                    | Inflammatory bowel disease                |
+| J400z     | Crohn’s disease of the small bowel NOS                                                                                | Inflammatory bowel disease                |
 | J401.     | Regional enteritis of the large bowel                                                                                 | Inflammatory bowel disease                |
 | J4010     | Regional enteritis of the colon                                                                                       | Inflammatory bowel disease                |
 | J4011     | Regional enteritis of the rectum                                                                                      | Inflammatory bowel disease                |
-| J4012     | Exacerbation of Crohn's disease of large intestine                                                                    | Inflammatory bowel disease                |
-| J401z     | Crohn's disease of the large bowel NOS                                                                                | Inflammatory bowel disease                |
+| J4012     | Exacerbation of Crohn’s disease of large intestine                                                                    | Inflammatory bowel disease                |
+| J401z     | Crohn’s disease of the large bowel NOS                                                                                | Inflammatory bowel disease                |
 | J402.     | Regional ileocolitis                                                                                                  | Inflammatory bowel disease                |
 | J40z.     | Regional enteritis NOS                                                                                                | Inflammatory bowel disease                |
 | J41..     | Idiopathic proctocolitis                                                                                              | Inflammatory bowel disease                |
@@ -760,22 +1445,22 @@ Table A1 Read codes for index diagnoses
 | J410z     | Ulcerative proctocolitis NOS                                                                                          | Inflammatory bowel disease                |
 | J411.     | Ulcerative (chronic) enterocolitis                                                                                    | Inflammatory bowel disease                |
 | J412.     | Ulcerative (chronic) ileocolitis                                                                                      | Inflammatory bowel disease                |
-| Jyu40     | \[X\]Other Crohn's disease                                                                                            | Inflammatory bowel disease                |
+| Jyu40     | \[X\]Other Crohn’s disease                                                                                            | Inflammatory bowel disease                |
 | Jyu41     | \[X\]Other ulcerative colitis                                                                                         | Inflammatory bowel disease                |
 | N0310     | Arthropathy in ulcerative colitis                                                                                     | Inflammatory bowel disease                |
 | N0454     | Juvenile arthritis in ulcerative colitis                                                                              | Inflammatory bowel disease                |
-| J08z9     | Orofacial Crohn's disease                                                                                             | Inflammatory bowel disease                |
-| J40..     | Regional enteritis - Crohn's disease                                                                                  | Inflammatory bowel disease                |
-| J4002     | Crohn's disease of the terminal ileum                                                                                 | Inflammatory bowel disease                |
-| J4003     | Crohn's disease of the ileum unspecified                                                                              | Inflammatory bowel disease                |
-| J4004     | Crohn's disease of the ileum NOS                                                                                      | Inflammatory bowel disease                |
-| J4005     | Exacerbation of Crohn's disease of small intestine                                                                    | Inflammatory bowel disease                |
-| J400z     | Crohn's disease of the small bowel NOS                                                                                | Inflammatory bowel disease                |
-| J4012     | Exacerbation of Crohn's disease of large intestine                                                                    | Inflammatory bowel disease                |
-| J401z     | Crohn's disease of the large bowel NOS                                                                                | Inflammatory bowel disease                |
-| Jyu40     | \[X\]Other Crohn's disease                                                                                            | Inflammatory bowel disease                |
-| N0311     | Arthropathy in Crohn's disease                                                                                        | Inflammatory bowel disease                |
-| N0453     | Juvenile arthritis in Crohn's disease                                                                                 | Inflammatory bowel disease                |
+| J08z9     | Orofacial Crohn’s disease                                                                                             | Inflammatory bowel disease                |
+| J40..     | Regional enteritis - Crohn’s disease                                                                                  | Inflammatory bowel disease                |
+| J4002     | Crohn’s disease of the terminal ileum                                                                                 | Inflammatory bowel disease                |
+| J4003     | Crohn’s disease of the ileum unspecified                                                                              | Inflammatory bowel disease                |
+| J4004     | Crohn’s disease of the ileum NOS                                                                                      | Inflammatory bowel disease                |
+| J4005     | Exacerbation of Crohn’s disease of small intestine                                                                    | Inflammatory bowel disease                |
+| J400z     | Crohn’s disease of the small bowel NOS                                                                                | Inflammatory bowel disease                |
+| J4012     | Exacerbation of Crohn’s disease of large intestine                                                                    | Inflammatory bowel disease                |
+| J401z     | Crohn’s disease of the large bowel NOS                                                                                | Inflammatory bowel disease                |
+| Jyu40     | \[X\]Other Crohn’s disease                                                                                            | Inflammatory bowel disease                |
+| N0311     | Arthropathy in Crohn’s disease                                                                                        | Inflammatory bowel disease                |
+| N0453     | Juvenile arthritis in Crohn’s disease                                                                                 | Inflammatory bowel disease                |
 | F26..     | Migraine                                                                                                              | Migraine                                  |
 | XaXkr     | Migraine induced by oestrogen contraceptive                                                                           | Migraine                                  |
 | F261.     | Migraine without aura                                                                                                 | Migraine                                  |
@@ -885,38 +1570,38 @@ Table A1 Read codes for index diagnoses
 | NyuB200   | \[X\]Osteoporosis in other disorders classified elsewhere                                                             | Osteoporosis                              |
 | NyuB800   | \[X\]Unspecified osteoporosis with pathological fracture                                                              | Osteoporosis                              |
 | NyuB800   | \[X\]Unspecified osteoporosis with pathological fracture                                                              | Osteoporosis                              |
-| 147F.     | History of Parkinson's disease                                                                                        | Parkinson's disease (all)                 |
-| 297A.     | O/E - Parkinsonian tremor                                                                                             | Parkinson's disease (all)                 |
-| 2987      | O/E -Parkinson flexion posture                                                                                        | Parkinson's disease (all)                 |
-| 2994      | O/E-festination-Parkinson gait                                                                                        | Parkinson's disease (all)                 |
-| A94y1     | Syphilitic parkinsonism                                                                                               | Parkinson's disease (all)                 |
-| Eu023     | \[X\]Dementia in Parkinson's disease                                                                                  | Parkinson's disease (all)                 |
-| F11x9     | Cerebral degeneration in Parkinson's disease                                                                          | Parkinson's disease (all)                 |
-| F12..     | Parkinson's disease                                                                                                   | Parkinson's disease (all)                 |
-| F120.     | Paralysis agitans                                                                                                     | Parkinson's disease (all)                 |
-| F121.     | Parkinsonism secondary to drugs                                                                                       | Parkinson's disease (all)                 |
-| F123.     | Postencephalitic parkinsonism                                                                                         | Parkinson's disease (all)                 |
-| F124.     | Vascular parkinsonism                                                                                                 | Parkinson's disease (all)                 |
-| F12W.     | Secondary parkinsonism due to other external agents                                                                   | Parkinson's disease (all)                 |
-| F12X.     | Secondary parkinsonism, unspecified                                                                                   | Parkinson's disease (all)                 |
-| F12z.     | Parkinson's disease NOS                                                                                               | Parkinson's disease (all)                 |
-| F1303     | Parkinsonism with orthostatic hypotension                                                                             | Parkinson's disease (all)                 |
-| Fyu20     | \[X\]Other drug-induced secondary parkinsonism                                                                        | Parkinson's disease (all)                 |
-| Fyu21     | \[X\]Other secondary parkinsonism                                                                                     | Parkinson's disease (all)                 |
-| Fyu22     | \[X\]Parkinsonism in diseases classified elsewhere                                                                    | Parkinson's disease (all)                 |
-| Fyu29     | \[X\]Secondary parkinsonism, unspecified                                                                              | Parkinson's disease (all)                 |
-| Fyu2B     | \[X\]Secondary parkinsonism due to other external agents                                                              | Parkinson's disease (all)                 |
-| 147F.     | History of Parkinson's disease                                                                                        | Parkinson's disease (excluding secondary) |
-| 297A.     | O/E - Parkinsonian tremor                                                                                             | Parkinson's disease (excluding secondary) |
-| 2987      | O/E -Parkinson flexion posture                                                                                        | Parkinson's disease (excluding secondary) |
-| 2994      | O/E-festination-Parkinson gait                                                                                        | Parkinson's disease (excluding secondary) |
-| Eu023     | \[X\]Dementia in Parkinson's disease                                                                                  | Parkinson's disease (excluding secondary) |
-| F11x9     | Cerebral degeneration in Parkinson's disease                                                                          | Parkinson's disease (excluding secondary) |
-| F12..     | Parkinson's disease                                                                                                   | Parkinson's disease (excluding secondary) |
-| F120.     | Paralysis agitans                                                                                                     | Parkinson's disease (excluding secondary) |
-| F12z.     | Parkinson's disease NOS                                                                                               | Parkinson's disease (excluding secondary) |
-| F1303     | Parkinsonism with orthostatic hypotension                                                                             | Parkinson's disease (excluding secondary) |
-| Fyu22     | \[X\]Parkinsonism in diseases classified elsewhere                                                                    | Parkinson's disease (excluding secondary) |
+| 147F.     | History of Parkinson’s disease                                                                                        | Parkinson’s disease (all)                 |
+| 297A.     | O/E - Parkinsonian tremor                                                                                             | Parkinson’s disease (all)                 |
+| 2987      | O/E -Parkinson flexion posture                                                                                        | Parkinson’s disease (all)                 |
+| 2994      | O/E-festination-Parkinson gait                                                                                        | Parkinson’s disease (all)                 |
+| A94y1     | Syphilitic parkinsonism                                                                                               | Parkinson’s disease (all)                 |
+| Eu023     | \[X\]Dementia in Parkinson’s disease                                                                                  | Parkinson’s disease (all)                 |
+| F11x9     | Cerebral degeneration in Parkinson’s disease                                                                          | Parkinson’s disease (all)                 |
+| F12..     | Parkinson’s disease                                                                                                   | Parkinson’s disease (all)                 |
+| F120.     | Paralysis agitans                                                                                                     | Parkinson’s disease (all)                 |
+| F121.     | Parkinsonism secondary to drugs                                                                                       | Parkinson’s disease (all)                 |
+| F123.     | Postencephalitic parkinsonism                                                                                         | Parkinson’s disease (all)                 |
+| F124.     | Vascular parkinsonism                                                                                                 | Parkinson’s disease (all)                 |
+| F12W.     | Secondary parkinsonism due to other external agents                                                                   | Parkinson’s disease (all)                 |
+| F12X.     | Secondary parkinsonism, unspecified                                                                                   | Parkinson’s disease (all)                 |
+| F12z.     | Parkinson’s disease NOS                                                                                               | Parkinson’s disease (all)                 |
+| F1303     | Parkinsonism with orthostatic hypotension                                                                             | Parkinson’s disease (all)                 |
+| Fyu20     | \[X\]Other drug-induced secondary parkinsonism                                                                        | Parkinson’s disease (all)                 |
+| Fyu21     | \[X\]Other secondary parkinsonism                                                                                     | Parkinson’s disease (all)                 |
+| Fyu22     | \[X\]Parkinsonism in diseases classified elsewhere                                                                    | Parkinson’s disease (all)                 |
+| Fyu29     | \[X\]Secondary parkinsonism, unspecified                                                                              | Parkinson’s disease (all)                 |
+| Fyu2B     | \[X\]Secondary parkinsonism due to other external agents                                                              | Parkinson’s disease (all)                 |
+| 147F.     | History of Parkinson’s disease                                                                                        | Parkinson’s disease (excluding secondary) |
+| 297A.     | O/E - Parkinsonian tremor                                                                                             | Parkinson’s disease (excluding secondary) |
+| 2987      | O/E -Parkinson flexion posture                                                                                        | Parkinson’s disease (excluding secondary) |
+| 2994      | O/E-festination-Parkinson gait                                                                                        | Parkinson’s disease (excluding secondary) |
+| Eu023     | \[X\]Dementia in Parkinson’s disease                                                                                  | Parkinson’s disease (excluding secondary) |
+| F11x9     | Cerebral degeneration in Parkinson’s disease                                                                          | Parkinson’s disease (excluding secondary) |
+| F12..     | Parkinson’s disease                                                                                                   | Parkinson’s disease (excluding secondary) |
+| F120.     | Paralysis agitans                                                                                                     | Parkinson’s disease (excluding secondary) |
+| F12z.     | Parkinson’s disease NOS                                                                                               | Parkinson’s disease (excluding secondary) |
+| F1303     | Parkinsonism with orthostatic hypotension                                                                             | Parkinson’s disease (excluding secondary) |
+| Fyu22     | \[X\]Parkinsonism in diseases classified elsewhere                                                                    | Parkinson’s disease (excluding secondary) |
 | 14F2.     | H/O: psoriasis                                                                                                        | Psoriasis                                 |
 | M160.     | Psoriatic arthropathy                                                                                                 | Psoriasis                                 |
 | M1600     | Psoriasis spondylitica                                                                                                | Psoriasis                                 |
@@ -969,7 +1654,7 @@ Table A1 Read codes for index diagnoses
 | 66YS.     | Chronic obstructive pulmonary disease monitoring by nurse                                                             | Pulmonary Disease, Chronic Obstructive    |
 | 66YT.     | Chronic obstructive pulmonary disease monitoring by doctor                                                            | Pulmonary Disease, Chronic Obstructive    |
 | 8CR1.     | Chronic obstructive pulmonary disease clini management plan                                                           | Pulmonary Disease, Chronic Obstructive    |
-| H3...     | Chronic obstructive pulmonary disease                                                                                 | Pulmonary Disease, Chronic Obstructive    |
+| H3…       | Chronic obstructive pulmonary disease                                                                                 | Pulmonary Disease, Chronic Obstructive    |
 | H3121     | Emphysematous bronchitis                                                                                              | Pulmonary Disease, Chronic Obstructive    |
 | H3122     | Acute exacerbation of chronic obstructive airways disease                                                             | Pulmonary Disease, Chronic Obstructive    |
 | H312z     | Obstructive chronic bronchitis NOS                                                                                    | Pulmonary Disease, Chronic Obstructive    |
@@ -985,7 +1670,7 @@ Table A1 Read codes for index diagnoses
 | H32y.     | Other emphysema                                                                                                       | Pulmonary Disease, Chronic Obstructive    |
 | H32y0     | Acute vesicular emphysema                                                                                             | Pulmonary Disease, Chronic Obstructive    |
 | H32y1     | Atrophic (senile) emphysema                                                                                           | Pulmonary Disease, Chronic Obstructive    |
-| H32y2     | MacLeod's unilateral emphysema                                                                                        | Pulmonary Disease, Chronic Obstructive    |
+| H32y2     | MacLeod’s unilateral emphysema                                                                                        | Pulmonary Disease, Chronic Obstructive    |
 | H32yz     | Other emphysema NOS                                                                                                   | Pulmonary Disease, Chronic Obstructive    |
 | H32z.     | Emphysema NOS                                                                                                         | Pulmonary Disease, Chronic Obstructive    |
 | H36..     | Mild chronic obstructive pulmonary disease                                                                            | Pulmonary Disease, Chronic Obstructive    |
@@ -1037,12 +1722,12 @@ Table A1 Read codes for index diagnoses
 | N040R     | Rheumatoid nodule                                                                                                     | Rheumatoid arthritis                      |
 | N040S     | Rheumatoid arthritis - multiple joint                                                                                 | Rheumatoid arthritis                      |
 | N040T     | Flare of rheumatoid arthritis                                                                                         | Rheumatoid arthritis                      |
-| N041.     | Felty's syndrome                                                                                                      | Rheumatoid arthritis                      |
+| N041.     | Felty’s syndrome                                                                                                      | Rheumatoid arthritis                      |
 | N042.     | Other rheumatoid arthropathy + visceral/systemic involvement                                                          | Rheumatoid arthritis                      |
 | N0421     | Rheumatoid lung disease                                                                                               | Rheumatoid arthritis                      |
 | N0422     | Rheumatoid nodule                                                                                                     | Rheumatoid arthritis                      |
 | N042z     | Rheumatoid arthropathy + visceral/systemic involvement NOS                                                            | Rheumatoid arthritis                      |
-| N043.     | Juvenile rheumatoid arthritis - Still's disease                                                                       | Rheumatoid arthritis                      |
+| N043.     | Juvenile rheumatoid arthritis - Still’s disease                                                                       | Rheumatoid arthritis                      |
 | N0430     | Juvenile rheumatoid arthropathy unspecified                                                                           | Rheumatoid arthritis                      |
 | N0431     | Acute polyarticular juvenile rheumatoid arthritis                                                                     | Rheumatoid arthritis                      |
 | N0432     | Pauciarticular juvenile rheumatoid arthritis                                                                          | Rheumatoid arthritis                      |
@@ -1050,7 +1735,7 @@ Table A1 Read codes for index diagnoses
 | N043z     | Juvenile rheumatoid arthritis NOS                                                                                     | Rheumatoid arthritis                      |
 | N047.     | Seropositive errosive rheumatoid arthritis                                                                            | Rheumatoid arthritis                      |
 | N04X.     | Seropositive rheumatoid arthritis, unspecified                                                                        | Rheumatoid arthritis                      |
-| N04y2     | Adult-onset Still's disease                                                                                           | Rheumatoid arthritis                      |
+| N04y2     | Adult-onset Still’s disease                                                                                           | Rheumatoid arthritis                      |
 | N0455     | Juvenile rheumatoid arthritis                                                                                         | Rheumatoid arthritis                      |
 | Nyu43     | \[X\]Other forms of systemic lupus erythematosus                                                                      | Systemic Lupus Erythematosus              |
 | H57y4     | Lung disease with systemic lupus erythematosus                                                                        | Systemic Lupus Erythematosus              |
@@ -1079,7 +1764,7 @@ Table A1 Read codes for index diagnoses
 | G740.00   | Embolism and thrombosis of the abdominal aorta                                                                        | Thromboembolism                           |
 | G740.11   | Aortic bifurcation syndrome                                                                                           | Thromboembolism                           |
 | G740.12   | Aortoiliac obstruction                                                                                                | Thromboembolism                           |
-| G740.13   | Leriche's syndrome                                                                                                    | Thromboembolism                           |
+| G740.13   | Leriche’s syndrome                                                                                                    | Thromboembolism                           |
 | G740.14   | Saddle embolus                                                                                                        | Thromboembolism                           |
 | G741.00   | Embolism and thrombosis of the thoracic aorta                                                                         | Thromboembolism                           |
 | G74..11   | Arterial embolus and thrombosis                                                                                       | Thromboembolism                           |
@@ -1233,11 +1918,11 @@ Table A1 Read codes for index diagnoses
 | N0539     | Arthrosis of first carpometacarpal joint, unspecified                                                                 | Osteoarthritis                            |
 | XM1NQ     | Osteoarthritis of metacarpophalangeal joint                                                                           | Osteoarthritis                            |
 | Xa3gQ     | Osteoarthritis - hand joint                                                                                           | Osteoarthritis                            |
-| N0535     | (Otto's pelvis) or (hip osteoarthitis NOS) or (localised osteoarthritis, unspecified, of the pelvic region and thigh) | Osteoarthritis                            |
-| N0507     | Heberden's nodes with arthropathy                                                                                     | Osteoarthritis                            |
-| N0503     | Bouchard's nodes with arthropathy                                                                                     | Osteoarthritis                            |
+| N0535     | (Otto’s pelvis) or (hip osteoarthitis NOS) or (localised osteoarthritis, unspecified, of the pelvic region and thigh) | Osteoarthritis                            |
+| N0507     | Heberden’s nodes with arthropathy                                                                                     | Osteoarthritis                            |
+| N0503     | Bouchard’s nodes with arthropathy                                                                                     | Osteoarthritis                            |
 | XE1DW     | Generalised osteoarthritis of the hand                                                                                | Osteoarthritis                            |
-| N0501     | (Heberdens' nodes) or (Bouchards' nodes) or (generalised osteoarthritis of the hand)                                  | Osteoarthritis                            |
+| N0501     | (Heberdens’ nodes) or (Bouchards’ nodes) or (generalised osteoarthritis of the hand)                                  | Osteoarthritis                            |
 | N0614     | Traumatic arthropathy of the hand                                                                                     | Osteoarthritis                            |
 | N061G     | Traumatic arthropathy of metacarpophalangeal joint                                                                    | Osteoarthritis                            |
 | N061H     | Traumatic arthropathy of proximal interphalangeal joint of finger                                                     | Osteoarthritis                            |
@@ -1300,11 +1985,10 @@ Table A1 Read codes for index diagnoses
 | XE0Yb     | Cryptogenic fibrosing alveoliti                                                                                       | Pulmonary fibrosis                        |
 | XE0Zr     | Idiopath. fibrosing alveolitis                                                                                        | Pulmonary fibrosis                        |
 
-Table A2 OPCS codes for Hip and knee arthroplasty
--------------------------------------------------
+## Table A2 OPCS codes for Hip and knee arthroplasty
 
 | Type | definition\_or\_label | Item  | Code | Description of procedure (W) codes                                                             |
-|:-----|:----------------------|:------|:-----|:-----------------------------------------------------------------------------------------------|
+| :--- | :-------------------- | :---- | :--- | :--------------------------------------------------------------------------------------------- |
 | Knee | Defining codes        | K1.1  | O181 | Primary hybrid prosthetic replacement knee joint using cement                                  |
 | Knee | Defining codes        | K1.2  | O188 | Hybrid prosthetic replacement knee joint using cement, Other Specified                         |
 | Knee | Defining codes        | K1.3  | O189 | Hybrid prosthetic replacement knee joint using cement, unspecified                             |
@@ -1336,4 +2020,8 @@ Table A2 OPCS codes for Hip and knee arthroplasty
 | Hip  | Defining codes        | H1.21 | W958 | Other specified hybrid prosthetic replacement of hip joint using cement                        |
 | Hip  | Defining codes        | H1.22 | W959 | Unspecified hybrid prosthetic replacement of hip joint using cement                            |
 
-We discovered that those compound codes (which required both anatomical and procedure codes for a definition) that we had previously planned to use to identify arthroplasty were not present in the BioBank dataset. Before examining whether or not they were present in SAIL, we excluded these codes from the definitions for hip and knee arthroplasty.
+We discovered that those compound codes (which required both anatomical
+and procedure codes for a definition) that we had previously planned to
+use to identify arthroplasty were not present in the BioBank dataset.
+Before examining whether or not they were present in SAIL, we excluded
+these codes from the definitions for hip and knee arthroplasty.

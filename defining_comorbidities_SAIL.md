@@ -243,7 +243,7 @@ where the creatinine measurement “has its calibration traceable to
 IDMS”. For consistency, we will use the IDMS-traceable MDRD Study
 equation (GFR (mL/min/1.73 m2) = 175 × (Scr)<sup>-1.154</sup> ×
 (Age)<sup>-0.203</sup> × (0.742 if female) × (1.212 if African American)
-in the latter case.
+in the latter case. In the former case we will use the original four-variable MDRD186 formula which differs only in the first coefficient (175 in the new equation 186 in the original equation - see https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3997536/).
 
 The eGFR estimated from either method is normalized to 1.73 m² body
 surface area. As per the NIDDK guidance for providers
